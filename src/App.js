@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Login  from "../src/components/login";
 import Register from "../src/components/register";
+import forgetPassword from "../src/components/forgetpassword";
 
 class App extends React.Component {
   constructor(props) {
@@ -33,6 +34,7 @@ class App extends React.Component {
     const { isLogginActive } = this.state;
     const current = isLogginActive ? "Register" : "Login";
     const currentActive = isLogginActive ? "login" : "register";
+    const forgetPassword = isLogginActive ? "forgetpassword" : "forgetPassword";
     return (
       <div className="App">
         <div className="login">
@@ -43,7 +45,12 @@ class App extends React.Component {
             {!isLogginActive && (
               <Register containerRef={ref => (this.current = ref)} />
             )}
+             {!isLogginActive && (
+              <forgetPassword containerRef={ref => (this.current = ref)} />
+            )}
+
           </div>
+
           <RightSide
             current={current}
             currentActive={currentActive}

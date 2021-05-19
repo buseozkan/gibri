@@ -17,8 +17,8 @@ export class Register extends React.Component {
           </div>
           <div className="form">
             <div className="form-group">
-              <label htmlFor="username">Username</label>
-              <input type="text" name="username" placeholder="username" />
+              <label htmlFor="nameSurname">Name Surname</label>
+              <input type="text" name="Name Surname" placeholder="Name Surname" />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email</label>
@@ -30,6 +30,10 @@ export class Register extends React.Component {
             </div>
           </div>
         </div>
+
+        {/*footer right-help
+        forget password*/}
+
         <div className="footer">
           <button type="button" className="btn">
             Register

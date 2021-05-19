@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import "./login.css";
-
-//need help add to bottom 
-//login + forget password + register + continue as a guest 
-
-function Login() {
+/*
+function forgetPassword() {
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [newPassword, setNewPassword] = useState("");
 
     function validateForm() {
         return email.length > 0 && password.length > 0;
@@ -19,7 +14,7 @@ function Login() {
     }
 
     return (
-        <div className="Login">
+        <div className="forgetPassword">
             <Form onSubmit={handleSubmit}>
                 <Form.Group size="lg" controlId="email">
                     <Form.Label>Email</Form.Label>
@@ -31,33 +26,26 @@ function Login() {
                     />
                 </Form.Group>
                 <Form.Group size="lg" controlId="password">
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label>New Password</Form.Label>
                     <Form.Control
                         type="password"
-                        value={password}
+                        value={newPassword}
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </Form.Group>
-                <Button block size="lg" type="submit" disabled={!validateForm()}>
-                    Login
-        </Button>
+                <Form.Group size="lg" controlId="password">
+                    <Form.Label>Confirm Password</Form.Label>
+                    <Form.Control
+                        type="password"
+                        value={newPassword}
+                        onChange={(e) => setNewPassword(e.target.value)}
+                    />
+                </Form.Group>
             </Form>
-            <a className="forgetpassword" href="1234">
-                Forget Password
-            </a>
-
-            <div>
-            <a className="continueAsGuest" href="ghost">
-                Just browse as a guest!
-            </a>
-            <div>
-            <a className="helpMe" href="btn">
-            Help
-          </a>
-          </div>
-            </div>
         </div>
     );
 }
 
-export default Login;
+
+export default forgetPassword;
+*/
