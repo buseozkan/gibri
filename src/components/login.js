@@ -47,14 +47,14 @@ function Login() {
             </a>
 
             <div>
-            <a className="continueAsGuest" href="ghost">
-                Just browse as a guest!
+                <a className="continueAsGuest" href="ghost">
+                    Just browse as a guest!
             </a>
-            <div>
-            <a className="helpMe" href="btn">
-            Help
+                <div>
+                    <a className="helpMe" href="btn">
+                        Help
           </a>
-          </div>
+                </div>
             </div>
         </div>
     );
