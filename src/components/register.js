@@ -20,12 +20,12 @@ export class Register extends React.Component {
               <label htmlFor="name">Name</label>
               <input type="text" name="Name" placeholder="Name" />
             </div>
-            <div className="form">
+           
               <div className="form-group">
               <label htmlFor="surname">Surname</label>
               <input type="text" name="Surname" placeholder="Surname" />
               </div>
-            </div>
+           
             <div className="form-group">
               <label htmlFor="email">Email</label>
               <input type="text" name="email" placeholder="email" />
