@@ -6,7 +6,7 @@ import "./login.css";
 //need help add to bottom 
 //login + forget password + register + continue as a guest 
 
-function Login() {
+const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
@@ -14,7 +14,7 @@ function Login() {
         return email.length > 0 && password.length > 0;
     }
 
-    function handleSubmit(event) {
+    const handleSubmit = (event) => {
         event.preventDefault();
     }
 
@@ -38,25 +38,22 @@ function Login() {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </Form.Group>
-                <Button block size="lg" type="submit" disabled={!validateForm()}>
+                <Button className="Login-Button" block size="lg" type="submit" disabled={!validateForm()}>
                     Login
         </Button>
             </Form>
-            <a className="forgetpassword" href="1234">
-                Forget Password
-            </a>
-
-            <div>
-            <a className="continueAsGuest" href="ghost">
-                Just browse as a guest!
-            </a>
-            <div>
-            <a className="helpMe" href="btn">
-            Help
-          </a>
-          </div>
+            <div className="Links">
+                <div className="forgetPassword">
+                <a href="1234">Forget Password</a>
+                </div>
+                <div className="continueAsGuest">
+                <a href="ghost">Just browse as a guest!</a>
+                </div>
+                <div className="helpMe">
+                <a href="btn">Help Me</a>
+                </div>            
             </div>
-        </div>
+           </div> 
     );
 }
 
