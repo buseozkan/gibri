@@ -24,7 +24,7 @@ const Login = () => {
       <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="email">
           <Form.Label>Email</Form.Label>
-          <Form.Control
+          <Form.Control className="input"
             autoFocus
             type="email"
             value={email}
@@ -33,7 +33,7 @@ const Login = () => {
         </Form.Group>
         <Form.Group size="lg" controlId="password">
           <Form.Label>Password</Form.Label>
-          <Form.Control
+          <Form.Control className="input"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
