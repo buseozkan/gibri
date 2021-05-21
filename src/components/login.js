@@ -23,7 +23,7 @@ const Login = () => {
       <text id="welcomeText">Welcome be canlar </text>
       <Form onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="email">
-          <Form.Label>Email</Form.Label>
+          <Form.Label className="label">Email</Form.Label>
           <Form.Control className="input"
             autoFocus
             type="email"
@@ -32,7 +32,7 @@ const Login = () => {
           />
         </Form.Group>
         <Form.Group size="lg" controlId="password">
-          <Form.Label>Password</Form.Label>
+          <Form.Label className="label">Password</Form.Label>
           <Form.Control className="input"
             type="password"
             value={password}
