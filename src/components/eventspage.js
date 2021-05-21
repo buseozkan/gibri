@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { Col, Container, Button, Card, Row } from 'react-bootstrap';
+import Dropdown from 'react-dropdown';
 
 const Programs = () => {
     const [events, setEvents] = React.useState([])
+    const cities = [
+        'magusa', 'lefkosa', 'girne'
+    ];
     const getEvent = async () => {
         const response = await fetch("http://localhost:3000/eventspage", {
             method: 'GET',
@@ -21,14 +25,15 @@ const Programs = () => {
         getEvent()
     }, [])
     return (
-        <Container>
+        <div>
             <Row className="ml-4 mt-4">
                 <Link to="/create-event">
-                    <Button variant="danger" className="ml-3">Create event</Button>
                 </Link>
+                
             </Row>
-
-        </Container>
+            <Dropdown options={cities} placeholder="Select the city" />
+        </div>
+     
     );
 
 }

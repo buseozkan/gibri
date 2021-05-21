@@ -6,6 +6,7 @@ import forgetPassword from "../src/components/forgetpassword";
 import Programs from "../src/components/eventspage";
 import Home from "../src/components/homepage";
 import AboutUs from "../src/components/aboutus";
+import Search from "../src/components/search";
 
 import {
   Route,
@@ -28,6 +29,7 @@ class App extends React.Component {
             <Route path="/eventspage" component={Programs}/>
             <Route path="/register" component={Register}/>
           </div>
+          <Search />
         </div>
       </HashRouter>
     )
