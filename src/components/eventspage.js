@@ -38,3 +38,10 @@ const Programs = () => {
 
 }
 export default Programs;
+
+/*<button className="Login-Button "
+                type="submit">Host an Event</button>
+
+            <button className="Login-Button2 "
+                type="submit"> Attend an Event</button>
+*/

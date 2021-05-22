@@ -1,0 +1,26 @@
+.text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: aliceblue;
+        font-size: 40px;
+
+}
+
+.event1 {
+    display: block;
+    position: absolute;
+  top: 20px;
+  left: 16px;
+  color: yellowgreen;
+  background-color: black;
+  
+}
+
+.photo {
+    height: 150px;
+    width: 50px; 
+    align-items: baseline;
+}
+

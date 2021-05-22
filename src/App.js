@@ -7,6 +7,7 @@ import Programs from "../src/components/eventspage";
 import Home from "../src/components/homepage";
 import AboutUs from "../src/components/aboutus";
 import Search from "../src/components/search";
+import Navbar from "../src/components/navbar";
 
 import {
   Route,
@@ -21,13 +22,16 @@ class App extends React.Component {
     return (
       <HashRouter>
         <div>
-         
-          <div className="login">
+        <Navbar />
+
+          <div className="app">
             <Route path="/" component={Home}/>
+            <Route path="/home" component={Home}/>
             <Route path="/login" component={Login}/>
             <Route path="/aboutus" component={AboutUs}/>
             <Route path="/eventspage" component={Programs}/>
             <Route path="/register" component={Register}/>
+            <Route path="/navbar" component={Navbar}/>
           </div>
           <Search />
         </div>
