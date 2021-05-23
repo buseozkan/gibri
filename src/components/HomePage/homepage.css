@@ -104,12 +104,14 @@
     border: 1px solid #444;
     padding: .5vw;
     flex: 1 0 auto;
-    width: 300px;
-    
+    width: 320px;
+    max-width: 320px;
+    max-height: 400px;    
 }
+
 .box img {
     width: 100%;
-    height: auto;
+    height: 50%;
 }  
 /* <div className="wrapper">
                     <img src="https://media-exp1.licdn.com/dms/image/C561BAQE-51J-8KkMZg/company-background_10000/0/1548357920228?e=2159024400&v=beta&t=D9EoYj6SBCp9zbnp8ZZdHpF27Kl29zabOtAvJw3qz4w" />

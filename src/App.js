@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./App.css";
-import Login from "../src/components/login";
-import Register from "../src/components/register";
-import forgetPassword from "../src/components/forgetpassword";
-import Programs from "../src/components/eventspage";
-import Home from "../src/components/homepage";
-import AboutUs from "../src/components/aboutus";
-import Search from "../src/components/search";
-import Navbar from "../src/components/navbar";
+import Login from "../src/components/Login/login";
+import Register from "../src/components/Register/register";
+import forgetPassword from "../src/components/ForgetPassword/forgetpassword";
+import Programs from "../src/components/EventsPage/eventspage";
+import Home from "../src/components/HomePage/homepage";
+import AboutUs from "../src/components/AboutUs/aboutus";
+import Navbar from "../src/components/NavBar/navbar";
 
 import {
   Route,
@@ -32,7 +31,6 @@ class App extends React.Component {
             <Route path="/register" component={Register}/>
             <Route path="/navbar" component={Navbar}/>
           </div>
-          <Search />
         </div>
       </HashRouter>
     )
