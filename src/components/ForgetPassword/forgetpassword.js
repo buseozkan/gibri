@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
+
 /*
-function forgetPassword() {
+const forgetPassword = () => {
     const [email, setEmail] = useState("");
     const [newPassword, setNewPassword] = useState("");
-
     function validateForm() {
         return email.length > 0 && password.length > 0;
     }
