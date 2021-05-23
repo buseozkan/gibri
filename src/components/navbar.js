@@ -1,15 +1,16 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import {  NavLink, Link } from "react-router-dom";
 import './navbar.css';
+import './eventspage';
 
 const Navbar = () => {
     return (
         <div className='Navigation'>
-            <Link className='Navigation1' to="/">Home</Link>
-            <Link className='Navigation1' to="/aboutus">About</Link>
-            <Link className='Navigation1' to="/eventspage">Events</Link>
-            <Link className='Navigation1' to="/login">LogIn</Link>
-            <Link className='Navigation1' to="/register">Register</Link>
+            <NavLink className='Navigation1' to="/homepage">Home</NavLink>
+            <NavLink className='Navigation1' to="/aboutus">About</NavLink>
+            <NavLink className='Navigation1' to="/eventspage">Events</NavLink>
+            <NavLink className='Navigation1' to="/login">LogIn</NavLink>
+            <NavLink className='Navigation1' to="/register">Register</NavLink>
 
         </div>
     );
