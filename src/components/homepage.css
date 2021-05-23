@@ -18,9 +18,109 @@
   
 }
 
-.photo {
-    height: 150px;
-    width: 50px; 
-    align-items: baseline;
+@media (max-width: 480px) {
+    .video-item {
+      flex: 0 0 100%; /* 1 accross */
+    }
 }
 
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text-wrap {
+    text-align: center;
+    padding: 10px;
+}
+/*
+ = ======== flexbox ========
+*/
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .card {
+   flex: 0 0 250px;
+ }
+ 
+ 
+ /*
+  = ====== visuals =========
+ */
+ * {
+   box-sizing: border-box;
+ }
+ body {
+   margin: 0
+ }
+ .cards {
+   min-height: 100vh;
+ }
+ .card {
+   margin: 12px; 
+   background: #f2f2f2;
+   border-radius: 7px;
+   padding: 0 0 50px 0
+ }
+ .card > header {
+   background: #808080;
+   height: 200px;
+   border-radius:  7px 7px 0 0;
+ }
+ .card > ul {
+   list-style: none;
+   padding: 0;
+ }
+ .card > ul li {
+   height: 20px;
+   width: 90%;
+   margin: 10px auto;
+   background: rgba(255,255,255, 0.4);
+ }
+ .card button {
+   width: 50%;
+   height: 40px;
+   border: 0;
+   margin-left: 12px;
+   border-radius: 7px;
+ }
+ .card--big {
+   transform: scaleX(1.12)
+ }
+
+.boxes {
+    padding: .5vw;
+    flex-flow: row wrap;
+    display: flex;
+}
+  
+.box {
+    margin: .5vw;
+    border: 1px solid #444;
+    padding: .5vw;
+    flex: 1 0 auto;
+    width: 300px;
+    
+}
+.box img {
+    width: 100%;
+    height: auto;
+}  
+/* <div className="wrapper">
+                    <img src="https://media-exp1.licdn.com/dms/image/C561BAQE-51J-8KkMZg/company-background_10000/0/1548357920228?e=2159024400&v=beta&t=D9EoYj6SBCp9zbnp8ZZdHpF27Kl29zabOtAvJw3qz4w" />
+                    <div className="text-wrap">
+                        <h1 className='event1'> Ahmet Evan 1 Haziran
+                        <img
+                                src="https://www.havadiskibris.com/wp-content/uploads/2019/06/Ahmet-Evan.jpg" />
+                        <p1 className='aciklama'>Ahmet Evan Narnia da</p1>
+                        </h1>
+                        <h1 className='event2'> Frekans 2 Haziran </h1>
+                        <p1> Shamrock </p1>
+                    </div>
+                </div>
+                */
