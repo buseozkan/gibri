@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Login from "../src/components/login";
 import Register from "../src/components/register";
-import forgetPassword from "../src/components/forgetpassword";
+//import forgetPassword from "../src/components/forgetpassword";
 import Programs from "../src/components/eventspage";
 import Home from "../src/components/homepage";
 import AboutUs from "../src/components/aboutus";
@@ -25,6 +25,7 @@ class App extends React.Component {
         <Navbar />
 
           <div className="appcss">
+            
             <Route path="/homepage" component={Home}/>
             <Route path="/login" component={Login}/>
             <Route path="/aboutus" component={AboutUs}/>
@@ -32,7 +33,6 @@ class App extends React.Component {
             <Route path="/register" component={Register}/>
             <Route path="/navbar" component={Navbar}/>
           </div>
-          <Search />
         </div>
       </HashRouter>
     )

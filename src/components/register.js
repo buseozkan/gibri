@@ -85,7 +85,7 @@ const Register = () => {
             Just browse as a guest!
           </a>
         </div>
-        <div>
+        <div className="helpMe">
           <a className="helpMe" href="btn">
             Help Me
           </a>

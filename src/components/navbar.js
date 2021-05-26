@@ -2,6 +2,9 @@ import React from 'react';
 import {  NavLink, Link } from "react-router-dom";
 import './navbar.css';
 import './eventspage';
+ 
+
+
 
 const Navbar = () => {
     return (

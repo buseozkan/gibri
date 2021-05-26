@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./login.css";
+import forgotPassword from './forgetpassword';
+import {  NavLink, Link } from "react-router-dom";
+
 
 //need help add to bottom
 //login + forget password + register + continue as a guest
@@ -56,9 +59,9 @@ const Login = () => {
           </a>         
         </div>
         <div>
-        <a className="forgotPassword" href="1234">
-            Forgot Password
-          </a>
+        <NavLink className="forgotPassword" to="/forgotpassword">Forgot Password?</NavLink>
+
+        
         </div>
         <div>
           <a className="helpMe" href="btn">
