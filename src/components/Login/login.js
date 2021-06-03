@@ -2,13 +2,19 @@ import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./login.css";
-//import forgetPassword from './forgetpassword';
-import {  NavLink, Link } from "react-router-dom";
+//import forgetPassword from "../ForgetPassword/forgetpassword";
+import { NavLink, Link } from "react-router-dom";
+import { useHistory } from "react-router";
+import Authentication from "../../services/Authentication/index";
+
 
 //need help add to bottom
 //login + forget password + register + continue as a guest
+let auth = new Authentication();
 
-const Login = () => {
+const Login = ({ forceUpdate, updateCount }) => {
+  let history = useHistory();
+  const [invalidCredentialsError, setInvalidCredentialsError] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -18,6 +24,19 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+  };
+
+  const handleLogin = (event) => {
+    event.preventDefault();
+    auth
+      .login({ email, password })
+      .then(() => {
+        history.pushState("/");
+        forceUpdate();
+      })
+      .catch((err) => {
+        setInvalidCredentialsError("Incorrect Email or Password");
+      });
   };
 
   return (
@@ -53,9 +72,9 @@ const Login = () => {
       </Form>
       <div className="Links">
         <div>
-        <a className="continueAsGuest" href="ghost">
+          <a className="continueAsGuest" href="ghost">
             Just browse as a guest!
-          </a>         
+          </a>
         </div>
         
         <div>

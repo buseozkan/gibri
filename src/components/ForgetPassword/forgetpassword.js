@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
-
 /*
+
 const forgetPassword = () => {
     const [email, setEmail] = useState("");
     const [newPassword, setNewPassword] = useState("");
@@ -30,7 +30,7 @@ const forgetPassword = () => {
                     <Form.Control
                         type="password"
                         value={newPassword}
-                        onChange={(e) => setPassword(e.target.value)}
+                        onChange={(e) => setNewPassword(e.target.value)}
                     />
                 </Form.Group>
                 <Form.Group size="lg" controlId="password">
