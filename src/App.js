@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Login from "../src/components/Login/login";
 import Register from "../src/components/Register/register";
-import forgetPassword from "../src/components/ForgetPassword/forgetpassword";
+//import forgetPassword from "../src/components/ForgetPassword/forgetpassword";
 import Programs from "../src/components/EventsPage/eventspage";
 import Home from "../src/components/HomePage/homepage";
 import AboutUs from "../src/components/AboutUs/aboutus";
@@ -24,6 +24,7 @@ class App extends React.Component {
         <Navbar />
 
           <div className="appcss">
+            
             <Route path="/homepage" component={Home}/>
             <Route path="/login" component={Login}/>
             <Route path="/aboutus" component={AboutUs}/>

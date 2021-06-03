@@ -111,7 +111,7 @@ body {
 
 .forgotPassword {
   text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-        color: #a096a1;
+        color: #03045e !important;
         padding-top: 15px;
 }
 

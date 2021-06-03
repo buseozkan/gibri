@@ -4,6 +4,8 @@ import "./navbar.css";
 import "../EventsPage/eventspage";
 import SearchBar from "../Search/search";
 
+
+
 const Navbar = () => {
   return (
     <div className="Navigation">
