@@ -45,7 +45,7 @@ const Navbar = () => {
           color: "gold",
         }}
       >
-        LogIn
+        Log In
       </NavLink>
       <NavLink
         className="Navigation1"
