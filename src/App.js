@@ -3,9 +3,8 @@ import "./App.css";
 import Login from "../src/components/Login/login";
 import Register from "../src/components/Register/register";
 //import forgetPassword from "../src/components/ForgetPassword/forgetpassword";
-import Programs from "../src/components/EventsPage/eventspage";
 import Home from "../src/components/HomePage/homepage";
-import AboutUs from "../src/components/AboutUs/aboutus";
+import AboutUs from "../src/components/AboutUs/index";
 import Navbar from "../src/components/NavBar/navbar";
 
 import {
@@ -15,6 +14,7 @@ import {
   Link,
   HashRouter
 } from "react-router-dom";
+import Programs from "../src/components/HomePage/homepage";
 
 class App extends React.Component {
   render() {
@@ -28,7 +28,7 @@ class App extends React.Component {
             <Route path="/homepage" component={Home}/>
             <Route path="/login" component={Login}/>
             <Route path="/aboutus" component={AboutUs}/>
-            <Route path="/eventspage" component={Programs}/>
+            <Route path="/events" component={Programs}/>
             <Route path="/register" component={Register}/>
             <Route path="/navbar" component={Navbar}/>
           </div>

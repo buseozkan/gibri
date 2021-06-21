@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./navbar.css";
-import "../EventsPage/eventspage";
 import SearchBar from "../Search/search";
 
 
