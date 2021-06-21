@@ -32,7 +32,7 @@ const Programs = () => {
     }, [])
     return (
         <>
-            <h1>Example Flexbox Gallery</h1>
+            <h1>Events</h1>
 
             <div>
                 <Row className="ml-4 mt-4">
@@ -51,6 +51,8 @@ const Programs = () => {
                     return (<div class="box">
                         <img src="https://www.havadiskibris.com/wp-content/uploads/2019/06/Ahmet-Evan.jpg" />
                         <h3>{event.eventName}</h3><p>&nbsp;</p>
+                        <h2>{event.eventCity}</h2>
+                        <p>{event.eventDescription}</p>
                     </div>)
                 })}
             </div>
