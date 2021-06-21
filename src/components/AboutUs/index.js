@@ -7,6 +7,7 @@ import {
     Link,
     HashRouter
 } from "react-router-dom";
+import contactUs from "../contactUs";
 
 class AboutUs extends React.Component {
     render() {
@@ -29,7 +30,9 @@ class AboutUs extends React.Component {
                     <button type="submit">Submit</button>
             </form>
             </div> */}
+            <contactUs></contactUs>
             </div>
+            
         )
     };
 };
