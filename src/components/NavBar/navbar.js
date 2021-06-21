@@ -30,15 +30,6 @@ const Navbar = () => {
       </NavLink>
       <NavLink
         className="Navigation1"
-        to="/eventspage"
-        activeStyle={{
-          color: "gold",
-        }}
-      >
-        Events
-      </NavLink>
-      <NavLink
-        className="Navigation1"
         to="/login"
         activeStyle={{
           color: "gold",

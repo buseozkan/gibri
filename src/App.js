@@ -25,10 +25,9 @@ class App extends React.Component {
 
           <div className="appcss">
             
-            <Route path="/homepage" component={Home}/>
+            <Route path="/homepage" component={Programs}/>
             <Route path="/login" component={Login}/>
             <Route path="/aboutus" component={AboutUs}/>
-            <Route path="/events" component={Programs}/>
             <Route path="/register" component={Register}/>
             <Route path="/navbar" component={Navbar}/>
           </div>
