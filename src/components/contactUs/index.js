@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import "./contactUs.css";
 
 
 class contactUs extends React.Component {
@@ -16,7 +17,6 @@ class contactUs extends React.Component {
             return (
                   <div className="section">
                         <div className="container">
-                              <div className="row">
                                     <div className="col-md-12">
                                           <div className="section-title">
                                                 <h2 className="title">Contact Us</h2>
@@ -54,8 +54,6 @@ class contactUs extends React.Component {
                                                 </form>
                                           </div>
                                     </div>
-
-                              </div>
 
                         </div>
                   </div>

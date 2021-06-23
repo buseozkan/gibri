@@ -3,9 +3,9 @@ import "./App.css";
 import Login from "../src/components/Login/login";
 import Register from "../src/components/Register/register";
 //import forgetPassword from "../src/components/ForgetPassword/forgetpassword";
-import Home from "../src/components/HomePage/homepage";
 import AboutUs from "../src/components/AboutUs/index";
 import Navbar from "../src/components/NavBar/navbar";
+import contactUs from "./components/contactUs";
 
 import {
   Route,
@@ -23,13 +23,13 @@ class App extends React.Component {
         <div>
         <Navbar />
 
-          <div className="appcss">
-            
+          <div className="appcss">            
             <Route path="/homepage" component={Programs}/>
             <Route path="/login" component={Login}/>
             <Route path="/aboutus" component={AboutUs}/>
             <Route path="/register" component={Register}/>
             <Route path="/navbar" component={Navbar}/>
+            <Route path="/aboutus" component={contactUs}/>
           </div>
         </div>
       </HashRouter>
