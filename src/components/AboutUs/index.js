@@ -30,7 +30,7 @@ class AboutUs extends React.Component {
                     <button type="submit">Submit</button>
             </form>
             </div> */}
-            <contactUs></contactUs>
+          {/* <contactUs></contactUs>*/} 
             </div>
             
         )

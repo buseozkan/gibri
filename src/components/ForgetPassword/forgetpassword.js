@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Form from "react-bootstrap/Form";
-/*
+
 
 const forgetPassword = () => {
     const [email, setEmail] = useState("");
@@ -48,4 +48,3 @@ const forgetPassword = () => {
 
 
 export default forgetPassword;
-*/
