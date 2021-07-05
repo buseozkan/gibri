@@ -5,7 +5,6 @@ import Register from "../src/components/Register/register";
 import About from "./components/About";
 import Navbar from "../src/components/NavBar/navbar";
 import contact from "./components/Contact";
-
 import { Route, NavLink, Switch, Link, HashRouter } from "react-router-dom";
 import Programs from "../src/components/HomePage/homepage";
 
