@@ -1,32 +1,14 @@
-import React from "react";
+/*import React, { useState } from "react";
 import axios from "axios";
 import "./contactUs.css";
 
-/*class contactUs extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    };
-  }*/
 
   const About = () => {  
-    onNameChange(event) {
-      this.setState({ name: event.target.value });
-    }
-    onEmailChange(event) {
-      this.setState({ email: event.target.value });
-    }
-    onSubjectChange(event) {
-      this.setState({ subject: event.target.value });
-    }
-    onMsgChange(event) {
-      this.setState({ message: event.target.value });
-    }
-  
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, SetMessage] = useState("");
+      
     submitEmail(e) {
       e.preventDefault();
       axios({
@@ -44,7 +26,7 @@ import "./contactUs.css";
     }
   
     resetForm() {
-      this.setState({ name: "", email: "", subject: "", message: "" });
+      this.setState({ name: "", email: "", message: "" });
     }
     return (
       <div className="section">
@@ -90,17 +72,6 @@ import "./contactUs.css";
                   </div>
                 </div>
                 <div className="form-group">
-                  <input
-                    placeholder="Subject"
-                    id="subject"
-                    type="text"
-                    className="form-control"
-                    required
-                    value={this.state.subject}
-                    onChange={this.onSubjectChange.bind(this)}
-                  />
-                </div>
-                <div className="form-group">
                   <textarea
                     placeholder="Message"
                     id="message"
@@ -122,4 +93,4 @@ import "./contactUs.css";
     );
   };
 
-export default About;
+export default About;*/
