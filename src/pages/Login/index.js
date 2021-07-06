@@ -2,8 +2,8 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import { useHistory } from "react-router";
-import useForm from "effects/useForm";
-import Authentication from "services/Authentication";
+import useForm from "../../effects/useForm";
+import Authentication from "../../services/Authentication";
 
 let auth = new Authentication();
 
