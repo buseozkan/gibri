@@ -36,7 +36,6 @@ const Login = ({ forceUpdate }) => {
       initialValue: "",
     },
   });
-
   const handleLogin = (event) => {
     event.preventDefault();
     auth
@@ -59,7 +58,7 @@ const Login = ({ forceUpdate }) => {
         <input
           className="form-control"
           type="email"
-          placeholder="email"
+          placeholder="Email"
           onChange={(e) => {
             setEmail(e.target.value);
           }}
@@ -84,7 +83,7 @@ const Login = ({ forceUpdate }) => {
             <input
               className="password-input"
               type="password"
-              placeholder="password-field"
+              placeholder="Password"
               onChange={(e) => {
                 setPassword(e.target.value);
               }}
@@ -118,7 +117,13 @@ const Login = ({ forceUpdate }) => {
           className="btn btn-primary btn-block waves-effect waves-light"
           type="submit"
           disabled={!isValid}
-          onClick={handleLogin}
+          value="Register"
+          onClick={(event) => {
+            event.preventDefault(event);
+            if (setInvalidCredentialsError()) {
+              handleLogin(event);
+            }
+          }}
         >
           Log In
         </button>
