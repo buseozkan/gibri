@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Login from "./pages/Login";
-import Register from "../src/components/Register/register";
+import Register from "./pages/Register";
 import About from "./components/About";
 import Navbar from "../src/components/NavBar/navbar";
 import contact from "./components/Contact";
@@ -14,7 +14,7 @@ function App() {
         <Navbar />
 
         <div className="appcss">
-          <Route path="/login" component={Login} />
+          <Login path="/login" />
           <Route path="/aboutus" component={About} />
           <Route path="/register" component={Register} />
           <Route path="/navbar" component={Navbar} />
