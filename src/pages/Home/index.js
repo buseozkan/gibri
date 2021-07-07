@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Col, Container, Button, Card, Row } from "react-bootstrap";

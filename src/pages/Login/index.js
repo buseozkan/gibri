@@ -120,9 +120,7 @@ const Login = ({ forceUpdate }) => {
           value="Register"
           onClick={(event) => {
             event.preventDefault(event);
-            if (setInvalidCredentialsError()) {
               handleLogin(event);
-            }
           }}
         >
           Log In

@@ -1,12 +1,13 @@
 import React from "react";
 import "./App.css";
+import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import About from "./components/About";
 //import Navbar from "../src/components/NavBar/navbar";
 //import contact from "./components/Contact";
 import Footer from "./components/Footer";
-import { Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "components/Header";
 
 function App() {
@@ -22,11 +23,14 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/home">
+              <Home />
+            </Route>
           </Switch>
-          <Login path="/login" />
-          <div>
-            <About path="/aboutus" />
-          </div>
+
         </div>
         <Footer />
       </div>
