@@ -4,17 +4,17 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import About from "./components/About";
-//import Navbar from "../src/components/NavBar/navbar";
+import Navbar from "../src/components/NavBar/navbar";
 //import contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from "components/Header";
+//import Header from "components/Header";
 
 function App() {
   return (
     <Router>
       <div id="wrapper">
-        <Header />
+        <Navbar />
         <div className="page-content">
           <Switch>
             <Route path="/register">

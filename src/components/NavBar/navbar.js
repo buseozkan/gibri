@@ -11,22 +11,22 @@ const Navbar = () => {
       <SearchBar className="SearchBar" />
       <NavLink
         className="Navigation1"
-        to="/homepage"
+        to="/home"
         activeStyle={{
           color: "gold",
         }}
       >
-        Home
+        <a href='./home'>Home</a>
       </NavLink>
 
       <NavLink
         className="Navigation1"
-        to="/aboutus"
+        to="/about"
         activeStyle={{
           color: "gold",
         }}
       >
-        About
+        <a href='./about'>About</a>
       </NavLink>
       <NavLink
         className="Navigation1"
@@ -35,7 +35,7 @@ const Navbar = () => {
           color: "gold",
         }}
       >
-        Log In
+        <a href='./login'>Log In</a>
       </NavLink>
       <NavLink
         className="Navigation1"

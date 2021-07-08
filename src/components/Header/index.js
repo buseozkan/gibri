@@ -1,4 +1,5 @@
 import React from "react";
+import "./header.css";
 
 const Header = () => {
   return (
@@ -41,16 +42,16 @@ const Header = () => {
             <div class="collapse navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li class="scroll active">
-                  <a href="#home">Home</a>
+                  <a href='./home'>Home</a>
                 </li>
                 <li class="scroll">
-                  <a href="#explore">Explore</a>
+                  <a href='./explore'>Explore</a>
                 </li>
                 <li class="scroll">
                   <a href="#event">Events</a>
                 </li>
                 <li class="scroll">
-                  <a href="#about">About</a>
+                  <a href='./about'>About</a>
                 </li>
                 <li>
                   <a class="no-scroll" href="#" target="_blank">
@@ -58,7 +59,7 @@ const Header = () => {
                   </a>
                 </li>
                 <li class="scroll">
-                  <a href="#contact">Contact</a>
+                  <a href='./contact'>Contact</a>
                 </li>
               </ul>
             </div>
