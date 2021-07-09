@@ -1,15 +1,17 @@
+import "./search.css";
+
 const SearchBar = () => (
-    <form action="/" method="get">
+    <form action="https://google.com/search" method="get" className="searchbar">
         <label htmlFor="header-search">
             <span className="visually-hidden"></span>
         </label>
         <input
             type="text"
             id="header-search"
-            placeholder="Search"
+            placeholder="Search Here"
             name="s" 
         />
-        <button type="submit">Search</button>
+        <button type="radio">Search</button>
     </form>
 );
 

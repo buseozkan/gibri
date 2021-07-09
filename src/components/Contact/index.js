@@ -3,7 +3,7 @@ import axios from "axios";
 import "./contactUs.css";
 
 
-  const About = () => {  
+  const Contact = () => {  
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -23,7 +23,7 @@ import "./contactUs.css";
           alert("Message failed to send.");
         }
       });
-    }
+    };
   
     resetForm() {
       this.setState({ name: "", email: "", message: "" });
@@ -93,4 +93,5 @@ import "./contactUs.css";
     );
   };
 
-export default About;*/
+export default Contact; 
+*/

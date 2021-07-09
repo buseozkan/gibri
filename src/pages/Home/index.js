@@ -9,9 +9,9 @@ const Programs = () => {
   const [events, setEvents] = useState([]);
   const [category, setCategory] = useState([]);
 
-  const cities = ["Lefkoşa", "Girne", "Mağusa", "Güzelyurt", "İskele"];
+  const cities = ["Lefkosa", "Girne", "Magusa", "Guzelyurt", "Iskele"];
 
-  const defatulCity = "Lefkoşa";
+  const defatulCity = "Lefkosa";
   const getEvent = async () => {
     const response = await fetch("http://localhost:3001/events", {
       method: "GET",
@@ -31,18 +31,20 @@ const Programs = () => {
   return (
     <>
       <h1>Events</h1>
-
       <div>
+        
         <Row className="ml-4 mt-4">
           <Link to="/create-event"></Link>
         </Row>
         <Dropdown
           className="citiesMenu"
           options={cities}
-          onClick={() => {
-            setCategory("Lefkoşa");
+          onClick={(e) => {
+            setCategory(e.target.value);
           }}
-          placeholder="Select the city"
+          placeholder="Sehrinizi secin"
+          value={cities}
+
         />
       </div>
 

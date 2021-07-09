@@ -13,7 +13,7 @@ const Navbar = () => {
         className="Navigation1"
         to="/home"
         activeStyle={{
-          color: "gold",
+          color: "#a096a1",
         }}
       >
         <a href='./home'>Home</a>
@@ -28,11 +28,29 @@ const Navbar = () => {
       >
         <a href='./about'>About</a>
       </NavLink>
+      <NavLink className="Navigation1"
+        to="/contact"
+        activeStyle={{
+          color: "gold",
+        }}
+      >
+        <a href='./contact'>Contact Us</a>
+
+      </NavLink>
+      <NavLink className="Navigation1"
+        to="/explore"
+        activeStyle={{
+          color: "gold",
+        }}
+      >
+        <a href='./explore'>Explore</a>
+
+      </NavLink>
       <NavLink
         className="Navigation1"
         to="/login"
         activeStyle={{
-          color: "gold",
+          color: "white",
         }}
       >
         <a href='./login'>Log In</a>
@@ -41,7 +59,7 @@ const Navbar = () => {
         className="Navigation1"
         to="/register"
         activeStyle={{
-          color: "gold",
+          color: "white",
         }}
       >
         Register

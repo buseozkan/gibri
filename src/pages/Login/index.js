@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useHistory } from "react-router";
 import useForm from "effects/useForm";
 import Authentication from "services/Authentication";
+import loginImg from "./login.svg";
+import "../Login/login.css";
 
 let auth = new Authentication();
 
@@ -51,6 +53,9 @@ const Login = ({ forceUpdate }) => {
 
   return (
     <div className="Login">
+      <div>
+      <img src={loginImg} alt="img" />
+      </div>
       <text id="welcomeText">Welcome To Gibri-Events</text>
       {/*<div onSubmit={handleSubmit}>*/}
       <div size="lg" controlId="email">
@@ -114,7 +119,7 @@ const Login = ({ forceUpdate }) => {
           </p>
         )}
         <button
-          className="btn btn-primary btn-block waves-effect waves-light"
+          className="loginbutton"
           type="submit"
           disabled={!isValid}
           value="Register"
@@ -128,7 +133,7 @@ const Login = ({ forceUpdate }) => {
       </div>
       <div className="Links">
         <div>
-          <a className="helpMe" href="btn">
+          <a className="helpMe" href='./contact'>
             Help Me
           </a>
         </div>

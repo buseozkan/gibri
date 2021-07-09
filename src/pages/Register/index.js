@@ -90,7 +90,7 @@ const Register = () => {
       </Form>
       <div className="Links">
         <div>
-          <a className="helpMe" href="btn">
+          <a className="helpMe" href="/contact">
             Help Me
           </a>
         </div>

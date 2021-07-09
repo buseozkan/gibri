@@ -16,7 +16,7 @@ const About = () => {
           the printing and typesetting industry. Lorem Ipsum has been the
           industry's standard dummy text ever since the 1500s
         </p>
-        <a href="#" class="btn btn-primary">
+        <a href="/home" class="btn btn-primary">
           View Date & Place <i class="fa fa-angle-right"></i>
         </a>
       </div>

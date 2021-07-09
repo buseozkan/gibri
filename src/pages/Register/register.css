@@ -18,12 +18,12 @@
     }
   }
 
-img {
+  img {
     border: 1px;
     border-radius: 4px;
     padding: 5px;
     width: 150px;
-}
+  }
   body {
     background-color: #ebecf6;
     font-family: "Ubuntu", sans-serif;
@@ -121,14 +121,13 @@ img {
   
   .forgotPassword {
     text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-          color: #a096a1;
-          padding-top: 15px;
+    color: #03045e;
+    padding-top: 15px;
   }
   
   .helpMe {
     text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
           color:#a096a1;
-          ;
           padding-top: 15px;
   }
   
