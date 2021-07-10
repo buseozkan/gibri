@@ -2,7 +2,7 @@
   .Login {
     background-color: #FFFFFF;
       width: 400px;
-      height: 400px;
+      height: 500px;
       margin: 7em auto;
       border-radius: 1.5em;
       box-shadow: 0px 11px 35px 2px rgb(0 0 0 / 14%);
@@ -117,20 +117,25 @@
   }
 
   .input {
-  text-align: left !important;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
   }
 
-  .label {
-  display: flex;
-  justify-content: center;
-  padding-left: 1cm;
+  Form.Label {
+    display: flex;
+    justify-content: center;
   }
 
   .form-control {
-  display: flex;
   justify-content: center;
   padding-left: 1cm;
   text-align: center !important;
+  width: 200px;
   }
 
   .loginbutton {
@@ -152,8 +157,5 @@
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
   }
   
-  .password-input {
-    text-align: left !important;
-
-  }
+  
 }

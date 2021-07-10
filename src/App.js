@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //import Header from "components/Header";
 import Explore from "./components/Explore";
-//import Contact from "./components/Contact";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -30,6 +30,9 @@ function App() {
             </Route>
             <Route path="/about">
               <About />
+            </Route>
+            <Route path="/contact">
+              <Contact />
             </Route>
             <Route path="/">
               <Home />

@@ -58,12 +58,13 @@ const Login = ({ forceUpdate }) => {
       </div>
       <text id="welcomeText">Welcome To Gibri-Events</text>
       {/*<div onSubmit={handleSubmit}>*/}
-      <div size="lg" controlId="email">
-        <label className="label">Email</label>
+      <div>
+      <Form.Group size="lg" controlId="password"> 
+      <Form.Label className="label">Email </Form.Label>
         <input
-          className="form-control"
           type="email"
-          placeholder="Email"
+          className="form-control"
+          placeholder="Enter your email here"
           onChange={(e) => {
             setEmail(e.target.value);
           }}
@@ -80,15 +81,16 @@ const Login = ({ forceUpdate }) => {
             {emailErrorMessage}
           </p>
         )}
+        </Form.Group>
       </div>
       <div>
         <div>
           <Form.Group size="lg" controlId="password">
             <Form.Label className="label">Password</Form.Label>
             <input
-              className="password-input"
               type="password"
-              placeholder="Password"
+              className="form-control"
+              placeholder="Enter your password here"
               onChange={(e) => {
                 setPassword(e.target.value);
               }}

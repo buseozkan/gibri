@@ -1,97 +1,97 @@
-/*import React, { useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+
 import "./contactUs.css";
 
 
-  const Contact = () => {  
+const Contact = () => {
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, SetMessage] = useState("");
-      
-    submitEmail(e) {
-      e.preventDefault();
-      axios({
-        method: "POST",
-        url: "/send",
-        data: this.state,
-      }).then((response) => {
-        if (response.data.status === "success") {
-          alert("Message Sent.");
-          this.resetForm();
-        } else if (response.data.status === "fail") {
-          alert("Message failed to send.");
-        }
-      });
-    };
-  
-    resetForm() {
-      this.setState({ name: "", email: "", message: "" });
-    }
-    return (
-      <div className="section">
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, SetMessage] = useState("");
+
+  const {submitName, submitEmail, submitMessage} = (event) => {
+    event.preventDefault();
+    axios({
+      method: "POST",
+      url: "/send",
+      data: this.state,
+    }).then((response) => {
+      if (response.data.status === "success") {
+        alert("Message Sent.");
+        this.resetForm();
+      } else if (response.data.status === "fail") {
+        alert("Message failed to send.");
+      }
+    });
+  };
+
+  const resetForm = () => {
+    this.setState({ name: "", email: "", message: "" });
+  }
+  return (
+    <div className="container">
+      <div className="container">
         <div className="container">
-          <div className="col-md-12">
-            <div className="section-title">
-              <h2 className="title">Contact Us</h2>
-              <p>
-                Let us know what you think! In order to provide better service,
-                please do not hesitate to give us your feedback. Thank you.
+          <div className="container">
+            <h2 className="title">Contact Us</h2>
+            <p>
+              Let us know what you think! In order to provide better service,
+              please do not hesitate to give us your feedback. Thank you.
               </p>
-              <hr />
-              <form
-                id="contact-form"
-                onSubmit={this.submitEmail.bind(this)}
-                method="POST"
-              >
-                <div className="form-group">
-                  <div className="row">
-                    <div className="col-md-6">
-                      <input
-                        placeholder="Name"
-                        id="name"
-                        type="text"
-                        className="form-control"
-                        required
-                        value={this.state.name}
-                        onChange={this.onNameChange.bind(this)}
+            <Form
+              controlId="container"
+              onSubmit={submitName, submitEmail, submitMessage}
+              method="POST"
+            >
+              <div className="container">
+                <div className="container">
+                  <div className="container">
+                    <input
+                      placeholder="Name"
+                      id="name"
+                      type="name"
+                      className="container"
+                      required
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                       />
-                    </div>
-                    <div className="col-md-6">
-                      <input
-                        placeholder="Email"
-                        id="email"
-                        type="email"
-                        className="form-control"
-                        aria-describedby="emailHelp"
-                        required
-                        value={this.state.email}
-                        onChange={this.onEmailChange.bind(this)}
+                  </div>
+                  <div className="container">
+                    <input
+                      placeholder="Email"
+                      id="email"
+                      type="email"
+                      className="container"
+                      aria-describedby="emailHelp"
+                      required
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       />
-                    </div>
                   </div>
                 </div>
-                <div className="form-group">
-                  <textarea
-                    placeholder="Message"
-                    id="message"
-                    className="form-control"
-                    rows="1"
-                    required
-                    value={this.state.message}
-                    onChange={this.onMsgChange.bind(this)}
+              </div>
+              <div className="container">
+                <textarea
+                  placeholder="Message"
+                  id="message"
+                  className="container"
+                  required
+                  value={message}
+                  onChange={(e) => SetMessage(e.target.value)}
                   />
-                </div>
-                <button type="submit" className="primary-btn submit">
-                  Submit
+              </div>
+              <button type="submit">
+                Submit
                 </button>
-              </form>
-            </div>
+            </Form>
           </div>
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
 export default Contact; 
-*/
