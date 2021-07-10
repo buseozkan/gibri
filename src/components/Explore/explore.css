@@ -1,13 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;    
-    background-color: linear-gradient(to right, #9C27B0, #E040FB);
-    font-family: "Ubuntu", sans-serif;
-    
+    margin: 0;
   }
   
   img {
-    width: 100%;
+    width: 100%;    
   }
   html {
     box-sizing: border-box;
@@ -24,7 +21,7 @@ body {
     padding: 0 8px;
   }
   
-  .kart {
+  .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
   }
@@ -33,7 +30,7 @@ body {
     padding: 50px;
     text-align: center;
     background-color: #474e5d;
-    color: black;
+    color: white;
   }
   
   .container {
@@ -46,7 +43,7 @@ body {
     display: table;
   }
   
-  .aciklama {
+  .title {
     color: grey;
   }
   
@@ -71,12 +68,3 @@ body {
     text-align: center;
   }
   
-  .isimler {
-
-  }
-  @media screen and (max-width: 750px) {
-    .column {
-      width: 100%;
-      display: block;
-    }
-}

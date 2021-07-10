@@ -1,14 +1,66 @@
 .container{
-    background-color: #373737;
-    color: #f7ab24;
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
     border: none;
-    font-size: 24px;
-    width: 400px;
-    height: 800px;
-    margin: 7em auto;
-    border-radius: 1.5em;
-    box-shadow: 0px 11px 35px 2px rgb(0 0 0 / 14%);
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    margin: auto;
+  width: 60%;
+    align-items: center;
     text-align: center;
-    justify-content: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif !important;
+    box-align: center;
+  padding: 10px;
+  break-after: always;
+  break-before: always;
 
 }
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    color: #3a7bd5;
+}
+
+p {
+    font-size: 28px;
+    text-align: center;
+    color: black;
+}
+
+.input {
+    display: table-column;
+    justify-content: center !important;
+    padding-left: 1cm;
+    break-before: auto;
+    break-after: auto;
+}
+
+  .submit {
+    justify-content: center !important;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 45%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04); 
+ }
+
+ .body {
+  background-color: linear-gradient(to right, #9C27B0, #E040FB);
+  font-family: "Ubuntu", sans-serif;
+  }

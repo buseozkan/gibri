@@ -1,15 +1,14 @@
 import React from "react";
-import "./App.css";
+//import "./App.css";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import About from "./components/About";
 import Navbar from "../src/components/NavBar/navbar";
 //import contact from "./components/Contact";
-import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //import Header from "components/Header";
-import Explore from "./components/Explore";
+//import Explore from "./components/Explore";
 import Contact from "./components/Contact";
 
 function App() {
@@ -25,9 +24,6 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
-            <Route path="/explore">
-              <Explore />
-            </Route>
             <Route path="/about">
               <About />
             </Route>
@@ -41,7 +37,6 @@ function App() {
           </Switch>
 
         </div>
-        <Footer />
       </div>
     </Router>
   );

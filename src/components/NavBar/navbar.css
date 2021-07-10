@@ -1,5 +1,5 @@
 .Navigation {
-  background: linear-gradient(to right, black,#94bbe9);
+  background: linear-gradient(to right, #27b08b,#94bbe9);
     display: flex;
     padding-left: 40%;
     text-align: right !important;   
@@ -58,10 +58,11 @@
   }
 
 .SearchBar {
-    display: flex;
+    display: inline-block;
     padding-left: 10% !important; 
 }
 
 body {
-  background: linear-gradient(to right, #eeaeca, #94bbe9);
-}
+  background-color: linear-gradient(to right, #9C27B0, #E040FB);
+  font-family: "Ubuntu", sans-serif;
+  }

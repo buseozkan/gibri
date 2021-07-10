@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import "./navbar.css";
 import SearchBar from "../Search/search";
 
@@ -35,15 +35,6 @@ const Navbar = () => {
         }}
       >
         <a href='./contact'>Contact Us</a>
-
-      </NavLink>
-      <NavLink className="Navigation1"
-        to="/explore"
-        activeStyle={{
-          color: "gold",
-        }}
-      >
-        <a href='./explore'>Explore</a>
 
       </NavLink>
       <NavLink
