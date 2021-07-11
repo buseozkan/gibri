@@ -1,11 +1,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;    
-    background-color: linear-gradient(to right, #9C27B0, #E040FB);
     font-family: "Ubuntu", sans-serif;
-    
+    background-image: url("gibri.png");
+  
   }
   
+
   img {
     width: 100%;
   }
@@ -33,21 +34,27 @@ body {
     padding: 50px;
     text-align: center;
     background-color: #474e5d;
-    color: black;
   }
   
-  .container {
+  
+  .kutu {
     padding: 0 16px;
+  background-color: grey;
   }
   
-  .container::after, .row::after {
+  .kutu::after, .row::after {
     content: "";
     clear: both;
     display: table;
   }
   
   .aciklama {
-    color: grey;
+    color: #2c67ba 51%;
+  }
+  .aciklama1{
+    color: gold;
+    text-align: center;
+    padding-top: 1cm;
   }
   
   .button {
@@ -64,19 +71,55 @@ body {
   
   .Team {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
   }
 
   #about {
     text-align: center;
   }
   
-  .isimler {
+ 
+  .btn {
+    border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  }
 
+  .btn:hover {
+    background-color: #555;
   }
   @media screen and (max-width: 750px) {
     .column {
       width: 100%;
       display: block;
     }
+}
+.container2{
+  width: 76%;
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  margin: auto;
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: 'Ubuntu', sans-serif !important;
+padding: 10px;
+break-after: always;
+break-before: always;
+background-color: #FFFFFF;
+margin-top: 7cm;
+
 }

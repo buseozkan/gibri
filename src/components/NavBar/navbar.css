@@ -1,5 +1,5 @@
 .Navigation {
-  background: linear-gradient(to right, #27b08b,#94bbe9);
+  background: linear-gradient(to right, rgba(245, 245, 245, 0.221), grey);
     display: flex;
     padding-left: 40%;
     text-align: right !important;   
@@ -12,8 +12,13 @@
 .Navigation1 {
     padding-left: 10px !important;
     margin-left: 10px;
+    color: #6e304b;
 }
 
+.Navigation1:link    {color: #6e304b;}
+.Navigation1:visited {color:#6e304b;}
+.Navigation1:hover   {color:white;}
+.Navigation1:active  {color:white;}
 
 .Login-Button {
   display: flex;

@@ -1,6 +1,6 @@
 .container{
     width: 76%;
-    color: rgb(38, 50, 56);
+    color: black;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 1px;
@@ -8,31 +8,30 @@
     border: none;
     border-radius: 20px;
     outline: none;
-    box-sizing: border-box;
     margin: auto;
-  width: 60%;
+    width: 50%;
     align-items: center;
     text-align: center;
     margin-bottom: 27px;
     font-family: 'Ubuntu', sans-serif !important;
-    box-align: center;
   padding: 10px;
-  break-after: always;
-  break-before: always;
+  background-color: #FFFFFF;
+  margin-top: 3cm;
 
 }
 
 .title {
     font-size: 40px;
     text-align: center;
-    color: #3a7bd5;
-}
+    color: #8C55AA;
+  }
 
 p {
     font-size: 28px;
     text-align: center;
-    color: black;
+    color:#4B4453;
 }
+
 
 .input {
     display: table-column;
@@ -46,21 +45,16 @@ p {
     justify-content: center !important;
     align-items: center;
     cursor: pointer;
-    border-radius: 5em;
     color: #fff;
-    background: linear-gradient(to right, #00d2ff 0%, #3a7bd5 51%, #00d2ff 100%);
+    background: linear-gradient(to right, #9C27B0, #E040FB);
     border: 0;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
     font-family: 'Ubuntu', sans-serif;
-    margin-left: 45%;
+    margin-left: 50px;
     font-size: 13px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04); 
  }
 
- .body {
-  background-color: linear-gradient(to right, #9C27B0, #E040FB);
-  font-family: "Ubuntu", sans-serif;
-  }
+ 

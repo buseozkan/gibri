@@ -56,7 +56,8 @@ flex: 0 0 250px;
 box-sizing: border-box;
 }
 body {
-margin: 0
+  margin: 0
+  
 }
 .cards {
 min-height: 100vh;
@@ -142,9 +143,16 @@ margin: 15px;
 }
 }
 
+.aciklama1{
+color:  #3a7bd5 51%;
+}
+
+.aciklama2 {
+  color: #3a7bd5 51%;
+}
 body {
-background-color: linear-gradient(to right, #9C27B0, #E040FB);
 font-family: "Ubuntu", sans-serif;
+background-image: url("./components/About/gibri.png");
 }
 
 .Login-Button {

@@ -30,9 +30,9 @@ const Contact = () => {
 
   return (
 
-    <div className="body">
+    <div className="container">
       <h1 className="title">Contact Us</h1>
-      <p>
+      <p classname="aciklama2">
         Let us know what you think! In order to provide better service,
         please do not hesitate to give us your feedback. Thank you.
               </p>
