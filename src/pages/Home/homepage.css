@@ -9,6 +9,11 @@ img {
 
 }
 
+.dropdown1 {
+  display: inline-block;
+  padding-left: 10%;
+}
+
 body {
   background-color: #ebecf6;
   font-family: "Montserrat", sans-serif;
@@ -78,7 +83,6 @@ select {
 .dropdown-menu {
   position: relative;
   display: inline-block;
-  background-color: #04aa6d;
   color: white;
   padding: 16px;
   font-size: 16px;

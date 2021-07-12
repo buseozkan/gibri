@@ -7,8 +7,34 @@ import "./homepage.css";
 const Home = () => {
   const [events, setEvents] = useState([]);
   const [city, setCity] = useState(null);
+  const [artist, setArtist] = useState(null);
 
   const cities = ["Lefkosa", "Girne", "Magusa", "Guzelyurt", "Iskele"];
+  const artists = [
+  'Ahmet Evan',
+  'Rast',
+  'Dj Privillige',
+  'Eril Cambaz',
+  'Reva',
+  'SensiJam',
+  'Bunfyah',
+  'Fikri Karayel',
+  'Ezgi Akgurgen',
+  'Atesh',
+  'MishaRoots',
+  'Todds and Friends',
+  'Nafiz Dolek',
+  'Organic Pixel',
+  'Cahit Kutrafali Trio',
+  'Dj Coskuner',
+  'Ogulcan Basari',
+  'Dilara Ferit',
+  'Osman Tugsal',
+  'The Healers',
+  'Zildji',
+  'OneBlood',
+  'Osman Tugsal'
+  ];
 
   const getEvent = async () => {
     const response = await fetch("http://localhost:3001/events", {
@@ -35,20 +61,36 @@ const Home = () => {
     });
   }
 
-  console.log(city);
+  if (artist) {
+    eventsToShow = events.filter((event) => {
+      return event.eventArtist === artist;
+    });
+  }
+
 
   return (
     <>
       <div>
         <div class="citiesMenu">
+          <h1 className="dropdown1">Filter by either City or Artist Name</h1>
           <Dropdown
-            className="citiesMenu"
+            className="dropdown1"
             options={cities}
             onChange={(citySelected) => {
               setCity(citySelected.value);
               console.log(citySelected.value, "target");
             }}
             placeholder="Sehrinizi Secin"
+            value={cities}
+          />
+          <Dropdown
+            className="dropdown1"
+            options={artists}
+            onChange={(artistSelected) => {
+              setArtist(artistSelected.value);
+              console.log(artistSelected.value, "target");
+            }}
+            placeholder="Artist Secin"
             value={cities}
           />
         </div>
