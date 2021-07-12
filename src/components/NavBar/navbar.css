@@ -8,8 +8,8 @@
   font-size: 15pt;
   font-family: "Poppins", sans-serif;
   height: 1cm;
-  background: linear-gradient(to right, #eeaeca, #94bbe9);
-  margin-top: 10px;
+  background: linear-gradient(to right, rgb(122, 59, 143), #bf94e9);
+  margin-top: 0.2px;
   margin-bottom: 10px;
 }
 
@@ -60,7 +60,7 @@
   padding-top: 15px;
 }
 
-.SearchBar {
+SearchBar {
   display: flex;
   padding-left: 10% !important;
 }

@@ -1,7 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { Row } from "react-bootstrap";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import "./homepage.css";
@@ -42,11 +40,6 @@ const Home = () => {
   return (
     <>
       <div>
-        <div>
-          <Row className="ml-4 mt-4">
-            <Link to="/create-event"></Link>
-          </Row>
-        </div>
         <div class="citiesMenu">
           <Dropdown
             className="citiesMenu"
@@ -55,7 +48,7 @@ const Home = () => {
               setCity(citySelected.value);
               console.log(citySelected.value, "target");
             }}
-            placeholder="Şehrinizi Seçin"
+            placeholder="Sehrinizi Secin"
             value={cities}
           />
         </div>
@@ -69,7 +62,7 @@ const Home = () => {
                     <img src={event.image}></img>
                     <h3>{event.eventName}</h3>
                     <h2>{event.eventCity}</h2>
-                    <h2>{event.eventArtist}</h2>
+                    <h2 className="unlu">{event.eventArtist}</h2>
                     <h2>{event.eventImage}</h2>
                     <p className="eventaciklama">{event.eventDescription}</p>
                     <p className="eventaciklama">
