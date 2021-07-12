@@ -1,19 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,400&family=Poppins:wght@300&display=swap");
+
 .Navigation {
-  background: linear-gradient(to right, black,#94bbe9);
-    display: flex;
-    padding-left: 40%;
-    text-align: right !important;   
-    justify-content: center;
-    font-size: 20pt;
-    font-family: 'Times New Roman', Times, serif;
-    height: 1cm;
+  background: linear-gradient(to right, black, #94bbe9);
+  display: flex;
+  padding-left: 40%;
+  text-align: right !important;
+  justify-content: center;
+  font-size: 15pt;
+  font-family: "Poppins", sans-serif;
+  height: 1cm;
 }
 
 .Navigation1 {
-    padding-left: 10px !important;
-    margin-left: 10px;
+  padding-left: 10px !important;
+  margin-left: 10px;
 }
-
 
 .Login-Button {
   display: flex;
@@ -27,14 +28,14 @@
   padding-right: 40px;
   padding-bottom: 10px;
   padding-top: 10px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-left: 35%;
   font-size: 13px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
 }
 
 .Login-Button2 {
-    display: flex;
+  display: flex;
   text-align: left;
   cursor: pointer;
   border-radius: 5em;
@@ -45,21 +46,22 @@
   padding-right: 40px;
   padding-bottom: 10px;
   padding-top: 10px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-left: 35%;
   font-size: 13px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
 }
 
 .Links {
-    text-shadow: 0px 0px 3px rgb(117 117 117 / 12%);
-      color: #E1BEE7;
-      padding-top: 15px;
-  }
+  text-shadow: 0px 0px 3px rgb(117 117 117 / 12%);
+  color: #e1bee7;
+  padding-top: 15px;
+}
 
 .SearchBar {
-    display: flex;
-    padding-left: 10% !important; 
+  display: flex;
+  padding-left: 10% !important;
 }
 
 body {

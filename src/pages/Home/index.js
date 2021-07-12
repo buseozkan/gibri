@@ -31,23 +31,27 @@ const Programs = () => {
   return (
     <>
       <h1>Events</h1>
+
       <div>
-        
-        <Row className="ml-4 mt-4">
-          <Link to="/create-event"></Link>
-        </Row>
+        <div>
+          <Row className="ml-4 mt-4">
+            <Link to="/create-event"></Link>
+          </Row>
+        </div>
+        <div></div>
         <Dropdown
           className="citiesMenu"
           options={cities}
           onClick={(e) => {
             setCategory(e.target.value);
           }}
-          placeholder="Sehrinizi secin"
+          placeholder="Şehrinizi Seçin"
           value={cities}
-
         />
       </div>
-
+      <div className="background">
+        <img src="/home/ahmetakinsel/Desktop/Projects-2/gibri/gibri-fe/public/images/gibri.png" />
+      </div>
       <div class="boxes">
         {events.map((event) => {
           return (

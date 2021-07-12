@@ -8,7 +8,6 @@ import Navbar from "../src/components/NavBar/navbar";
 //import contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-//import Header from "components/Header";
 import Explore from "./components/Explore";
 //import Contact from "./components/Contact";
 
@@ -31,14 +30,11 @@ function App() {
             <Route path="/about">
               <About />
             </Route>
-            <Route path="/">
+            <Route path="/home">
               <Home />
             </Route>
-          
           </Switch>
-
         </div>
-        <Footer />
       </div>
     </Router>
   );

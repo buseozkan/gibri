@@ -52,23 +52,24 @@ const Login = ({ forceUpdate }) => {
   };
 
   return (
-    <div className="Login">
-      <div>
-      <img src={loginImg} alt="img" />
+    <div className="Login-Page">
+      <div className="login-img">
+        <img className="login-img" src={loginImg} alt="img" />
       </div>
       <text id="welcomeText">Welcome To Gibri-Events</text>
       {/*<div onSubmit={handleSubmit}>*/}
       <div size="lg" controlId="email">
-        <label className="label">Email</label>
-        <input
-          className="form-control"
-          type="email"
-          placeholder="Email"
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
-          value={email}
-        />
+        <div className="inputs">
+          <input
+            className="form-control"
+            type="email"
+            placeholder="Email"
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+            value={email}
+          />
+        </div>
         {emailErrorMessage && (
           <p
             style={{
@@ -82,11 +83,10 @@ const Login = ({ forceUpdate }) => {
         )}
       </div>
       <div>
-        <div>
+        <div className="inputs">
           <Form.Group size="lg" controlId="password">
-            <Form.Label className="label">Password</Form.Label>
             <input
-              className="password-input"
+              className="form-control-2"
               type="password"
               placeholder="Password"
               onChange={(e) => {
@@ -125,7 +125,7 @@ const Login = ({ forceUpdate }) => {
           value="Register"
           onClick={(event) => {
             event.preventDefault(event);
-              handleLogin(event);
+            handleLogin(event);
           }}
         >
           Log In
@@ -133,7 +133,7 @@ const Login = ({ forceUpdate }) => {
       </div>
       <div className="Links">
         <div>
-          <a className="helpMe" href='./contact'>
+          <a className="helpMe" href="./contact">
             Help Me
           </a>
         </div>

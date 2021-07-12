@@ -28,52 +28,52 @@ const Register = () => {
   return (
     <div className="register">
       <div>
-        <img src={loginImg} alt="img" />
+        <img className="register-img" src={loginImg} alt="img" />
       </div>
       <text id="text">Let's Sign Up </text>
-      <Form onSubmit={handleSubmit}>
+      <Form className="forms" onSubmit={handleSubmit}>
         <Form.Group size="lg" controlId="email">
-          <Form.Label className="label">Name</Form.Label>
           <Form.Control
             className="input"
             autoFocus
             type="name"
+            placeholder="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
         </Form.Group>
         <Form.Group size="lg" controlId="password">
-          <Form.Label className="label">Surname</Form.Label>
           <Form.Control
             className="input"
             type="surname"
+            placeholder="Surname"
             value={surname}
             onChange={(e) => setSurname(e.target.value)}
           />
         </Form.Group>
         <Form.Group size="lg" controlId="password">
-          <Form.Label className="label">Email</Form.Label>
           <Form.Control
             className="input"
             type="email"
+            placeholder="Email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
         </Form.Group>
         <Form.Group size="lg" controlId="password">
-          <Form.Label className="label">Password</Form.Label>
           <Form.Control
             className="input"
             type="password"
+            placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
         </Form.Group>
         <Form.Group size="lg" controlId="password">
-          <Form.Label className="label">Confirm Password</Form.Label>
           <Form.Control
             className="input"
             type="confirmPassword"
+            placeholder="Confirm Password"
             value={confirmPassword}
             onChange={(e) => setConfirmPassword(e.target.value)}
           />
@@ -88,13 +88,6 @@ const Register = () => {
           Register
         </Button>
       </Form>
-      <div className="Links">
-        <div>
-          <a className="helpMe" href="/contact">
-            Help Me
-          </a>
-        </div>
-      </div>
     </div>
   );
 };

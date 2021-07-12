@@ -1,16 +1,23 @@
-@media all and (min-width: 480px) {
-  .Login {
-    background-color: #FFFFFF;
-      width: 400px;
-      height: 400px;
-      margin: 7em auto;
-      border-radius: 1.5em;
-      box-shadow: 0px 11px 35px 2px rgb(0 0 0 / 14%);
-      text-align: center;
-      justify-content: center;
-      font-size: 15px;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
 
+@media all and (min-width: 480px) {
+  .Login-Page {
+    background-color: #ffffff;
+    width: 30%;
+    height: 500px;
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 0px 11px 35px 2px rgb(0 0 0 / 14%);
+    text-align: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+  .login-img {
+    width: 320px;
+    height: 180px;
+    margin-left: 25px;
+  }
   .form-group {
     margin: 0 auto;
     max-width: 320px;
@@ -29,55 +36,73 @@
   }
 
   body {
-  background-color: #ebecf6;
-  font-family: "Ubuntu", sans-serif;
+    background-color: #ebecf6;
+    font-family: "Montserrat", sans-serif;
   }
 
   .Login-Button {
-  display: flex;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 5em;
-  color: #fff;
-  background: linear-gradient(to right, #9C27B0, #E040FB);
-  border: 0;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  font-family: 'Ubuntu', sans-serif;
-  margin-left: 35%;
-  font-size: 13px;
-  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+    display: flex;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #9c27b0, #e040fb);
+    border: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 35%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
   }
 
   .Links {
-  text-shadow: 0px 0px 3px rgb(117 117 117 / 12%);
-    color: #E1BEE7;
+    text-shadow: 0px 0px 3px rgb(117 117 117 / 12%);
+    color: #e1bee7;
     padding-top: 15px;
   }
 
-  #email {
-  width: 76%;
-  color: rgb(38, 50, 56);
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 1px;
-  background: rgba(136, 126, 126, 0.04);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  outline: none;
-  box-sizing: border-box;
-  border: 2px solid rgba(0, 0, 0, 0.02);
-  margin-bottom: 50px;
-  margin-left: 46px;
-  text-align: center;
-  margin-bottom: 27px;
-  font-family: 'Ubuntu', sans-serif;
+  #welcomeText {
+    color: #8c55aa;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 23px;
   }
 
-  #password {
+  .inputs {
+    display: flex;
+    align-items: center;
+  }
+
+  .forgotPassword {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #03045e !important;
+    padding-top: 15px;
+  }
+
+  .helpMe {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #03045e !important;
+    padding-top: 15px;
+  }
+
+  .input {
+    text-align: left !important;
+  }
+
+  .label {
+    display: flex;
+    justify-content: center;
+    padding-left: 1cm;
+  }
+
+  .form-control {
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1cm;
+    text-align: center !important;
     width: 76%;
     color: rgb(38, 50, 56);
     font-weight: 700;
@@ -94,43 +119,30 @@
     margin-left: 46px;
     text-align: center;
     margin-bottom: 27px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Montserrat", sans-serif;
   }
-
-  #welcomeText {
-  color: #8C55AA;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: bold;
-  font-size: 23px;
-  }
-
-  .forgotPassword {
-  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-  color: #03045e !important;
-  padding-top: 15px;
-  }
-
-  .helpMe {
-  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
-  color: #03045e !important;
-  padding-top: 15px;
-  }
-
-  .input {
-  text-align: left !important;
-  }
-
-  .label {
-  display: flex;
-  justify-content: center;
-  padding-left: 1cm;
-  }
-
-  .form-control {
-  display: flex;
-  justify-content: center;
-  padding-left: 1cm;
-  text-align: center !important;
+  .form-control-2 {
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 1cm;
+    text-align: center !important;
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 80px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: "Montserrat", sans-serif;
   }
 
   .loginbutton {
@@ -140,20 +152,19 @@
     cursor: pointer;
     border-radius: 5em;
     color: #fff;
-    background: linear-gradient(to right, #9C27B0, #E040FB);
+    background: linear-gradient(to right, #9c27b0, #e040fb);
     border: 0;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 10px;
     padding-top: 10px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-left: 35%;
     font-size: 15px;
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
   }
-  
+
   .password-input {
     text-align: left !important;
-
   }
 }
