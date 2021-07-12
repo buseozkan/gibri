@@ -1,17 +1,19 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Col, Container, Button, Card, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
+import "./homepage.css";
+import Reservation from "../reservation/reservation";
+import { NavLink } from "react-router-dom";
 
 const Programs = () => {
   const [events, setEvents] = useState([]);
-  const [category, setCategory] = useState([]);
+  const [city, setCity] = useState(null);
 
   const cities = ["Lefkosa", "Girne", "Magusa", "Guzelyurt", "Iskele"];
 
-  const defatulCity = "Lefkosa";
   const getEvent = async () => {
     const response = await fetch("http://localhost:3001/events", {
       method: "GET",
@@ -28,6 +30,17 @@ const Programs = () => {
   React.useEffect(() => {
     getEvent();
   }, []);
+
+  let eventsToShow = events;
+
+  if (city) {
+    eventsToShow = events.filter((event) => {
+      return event.eventCity === city;
+    });
+  }
+
+  console.log(city);
+
   return (
     <>
       <h1>Events</h1>
@@ -38,32 +51,44 @@ const Programs = () => {
             <Link to="/create-event"></Link>
           </Row>
         </div>
-        <div></div>
-        <Dropdown
-          className="citiesMenu"
-          options={cities}
-          onClick={(e) => {
-            setCategory(e.target.value);
-          }}
-          placeholder="Şehrinizi Seçin"
-          value={cities}
-        />
-      </div>
-      <div className="background">
-        <img src="/home/ahmetakinsel/Desktop/Projects-2/gibri/gibri-fe/public/images/gibri.png" />
-      </div>
-      <div class="boxes">
-        {events.map((event) => {
-          return (
-            <div class="box">
-              <img src="https://www.havadiskibris.com/wp-content/uploads/2019/06/Ahmet-Evan.jpg" />
-              <h3>{event.eventName}</h3>
-              <p>&nbsp;</p>
-              <h2>{event.eventCity}</h2>
-              <p>{event.eventDescription}</p>
-            </div>
-          );
-        })}
+        <div class="citiesMenu">
+          <Dropdown
+            className="citiesMenu"
+            options={cities}
+            onChange={(citySelected) => {
+              setCity(citySelected.value);
+              console.log(citySelected.value, "target");
+            }}
+            placeholder="Şehrinizi Seçin"
+            value={cities}
+          />
+        </div>
+        <div className="background">
+          <img src="/home/ahmetakinsel/Desktop/Projects-2/gibri/gibri-fe/public/images/gibri.png" />
+        </div>
+        <div class="boxes">
+          {eventsToShow.map((event) => {
+            return (
+              <>
+                <div class="box">
+                  <img src={event.image}></img>
+                  <h3>{event.eventName}</h3>
+                  <h2>{event.eventCity}</h2>
+                  <h2>{event.eventArtist}</h2>
+                  <h2>{event.eventImage}</h2>
+                  <p className="eventaciklama">{event.eventDescription}</p>
+                  <p className="eventaciklama">
+                    {" "}
+                    <form action="./Reservation">
+                      <a href="./Reservation">Click for reservation</a>
+                    </form>
+                  </p>
+                </div>
+                <div></div>
+              </>
+            );
+          })}
+        </div>
       </div>
     </>
   );

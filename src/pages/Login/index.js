@@ -70,72 +70,87 @@ const Login = ({ forceUpdate }) => {
             value={email}
           />
         </div>
-        {emailErrorMessage && (
-          <p
-            style={{
-              color: "red",
-              fontSize: "12px",
-              "margin-top": "-7px",
-            }}
-          >
-            {emailErrorMessage}
-          </p>
-        )}
-      </div>
-      <div>
-        <div className="inputs">
+        <div>
           <Form.Group size="lg" controlId="password">
+            <Form.Label className="label">Email </Form.Label>
             <input
-              className="form-control-2"
-              type="password"
-              placeholder="Password"
+              type="email"
+              className="form-control"
+              placeholder="Enter your email here"
               onChange={(e) => {
-                setPassword(e.target.value);
+                setEmail(e.target.value);
               }}
-              value={password}
+              value={email}
             />
+            {emailErrorMessage && (
+              <p
+                style={{
+                  color: "red",
+                  fontSize: "12px",
+                  "margin-top": "-7px",
+                }}
+              >
+                {emailErrorMessage}
+              </p>
+            )}
           </Form.Group>
         </div>
-        {passwordErrorMessage && (
-          <p
-            style={{
-              color: "red",
-              fontSize: "12px",
-              "margin-top": "-7px",
-            }}
-          >
-            {passwordErrorMessage}
-          </p>
-        )}
-        {invalidCredentialsError && (
-          <p
-            style={{
-              color: "red",
-              fontSize: "12px",
-              "margin-top": "-7px",
-            }}
-          >
-            {invalidCredentialsError}
-          </p>
-        )}
-        <button
-          className="loginbutton"
-          type="submit"
-          disabled={!isValid}
-          value="Register"
-          onClick={(event) => {
-            event.preventDefault(event);
-            handleLogin(event);
-          }}
-        >
-          Log In
-        </button>
-      </div>
-      <div className="Links">
         <div>
-          <a className="helpMe" href="./contact">
-            Help Me
-          </a>
+          <div className="inputs">
+            <Form.Group size="lg" controlId="password">
+              <input
+                className="form-control-2"
+                type="password"
+                className="form-control"
+                placeholder="Enter your password here"
+                onChange={(e) => {
+                  setPassword(e.target.value);
+                }}
+                value={password}
+              />
+            </Form.Group>
+          </div>
+          {passwordErrorMessage && (
+            <p
+              style={{
+                color: "red",
+                fontSize: "12px",
+                "margin-top": "-7px",
+              }}
+            >
+              {passwordErrorMessage}
+            </p>
+          )}
+          {invalidCredentialsError && (
+            <p
+              style={{
+                color: "red",
+                fontSize: "12px",
+                "margin-top": "-7px",
+              }}
+            >
+              {invalidCredentialsError}
+            </p>
+          )}
+          <button
+            className="loginbutton"
+            type="submit"
+            disabled={!isValid}
+            value="Register"
+            onClick={(event) => {
+              event.preventDefault(event);
+              handleLogin(event);
+            }}
+          >
+            Log In
+          </button>
+        </div>
+        <div className="Links">
+          <div>
+            <a className="helpMe" href="./contact">
+              Help Me
+            </a>
+          </div>
         </div>
       </div>
     </div>

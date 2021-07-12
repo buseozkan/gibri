@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
+import "./explore.css";
 
 const Explore = () => {
   return (
@@ -34,7 +35,7 @@ const Explore = () => {
                       <div class="single-event">
                         <img
                           class="img-responsive"
-                          src="images/event/event1.jpg"
+                          src="https://cdn.pixabay.com/photo/2021/07/03/22/15/buildings-6384966_960_720.jpg"
                           alt="event-image"
                         />
                         <h4>Chester Bennington</h4>
@@ -56,7 +57,7 @@ const Explore = () => {
                       <div class="single-event">
                         <img
                           class="img-responsive"
-                          src="images/event/event3.jpg"
+                          src="https://cdn.pixabay.com/photo/2021/07/03/22/15/buildings-6384966_960_720.jpg"
                           alt="event-image"
                         />
                         <h4>Rob Bourdon</h4>
@@ -82,7 +83,7 @@ const Explore = () => {
                       <div class="single-event">
                         <img
                           class="img-responsive"
-                          src="images/event/event2.jpg"
+                          src="https://cdn.pixabay.com/photo/2021/07/03/22/15/buildings-6384966_960_720.jpg"
                           alt="event-image"
                         />
                         <h4>Mike Shinoda</h4>
@@ -93,7 +94,7 @@ const Explore = () => {
                       <div class="single-event">
                         <img
                           class="img-responsive"
-                          src="images/event/event3.jpg"
+                          src="https://cdn.pixabay.com/photo/2021/07/03/22/15/buildings-6384966_960_720.jpg"
                           alt="event-image"
                         />
                         <h4>Rob Bourdon</h4>
@@ -106,7 +107,7 @@ const Explore = () => {
             </div>
           </div>
           <div class="guitar">
-            <img class="img-responsive" src="images/guitar.png" alt="guitar" />
+            <img class="img-responsive" src="https://cdn.pixabay.com/photo/2021/07/03/22/15/buildings-6384966_960_720.jpg" alt="guitar" />
           </div>
         </div>
       </div>

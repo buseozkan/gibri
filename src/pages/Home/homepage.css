@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
+
 .text {
   position: absolute;
   top: 50%;
@@ -235,15 +238,13 @@ body {
   padding-top: 15px;
 }
 
-.input {
-  text-align: left !important;
+.eventaciklama {
+  font-size: 20px;
+  text-align: left;
 }
 
 .label {
   display: flex;
   justify-content: center;
   padding-left: 1cm;
-}
-
-.citiesMenu {
 }
