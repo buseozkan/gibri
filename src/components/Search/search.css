@@ -1,13 +1,28 @@
-.visually-hidden {
-    clip-path: inset(50%);
-    height: 1px;
-    white-space: nowrap;
-    width: 1px;
-    padding-left: 0%; 
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
 
 .searchbar {
-    display: block;
-    justify-content: start;
+  display: block;
+  justify-content: start;
+  font-family: "Montserrat", sans-serif;
+}
+#header-search {
+  text-align: center !important;
+  width: 80%;
+  height: 18px;
+  color: rgb(38, 50, 56);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+  box-sizing: border-box;
+  border: 2px solid rgba(0, 0, 0, 0.02);
+  margin-bottom: 50px;
+  margin-left: 46px;
+  text-align: center;
+  margin-bottom: 27px;
+  font-family: "Montserrat", sans-serif;
 }

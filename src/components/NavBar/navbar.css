@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;1,400&family=Poppins:wght@300&display=swap");
 
 .Navigation {
-  background: linear-gradient(to right, black, #94bbe9);
   display: flex;
   padding-left: 40%;
   text-align: right !important;
@@ -9,11 +8,15 @@
   font-size: 15pt;
   font-family: "Poppins", sans-serif;
   height: 1cm;
+  background: linear-gradient(to right, #eeaeca, #94bbe9);
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.Navigation1 {
+.Nav-tittle {
   padding-left: 10px !important;
   margin-left: 10px;
+  color: white;
 }
 
 .Login-Button {
@@ -22,7 +25,6 @@
   cursor: pointer;
   border-radius: 5em;
   color: #fff;
-  background: linear-gradient(to right, #27b08b, yellow);
   border: 0;
   padding-left: 40px;
   padding-right: 40px;
@@ -40,7 +42,6 @@
   cursor: pointer;
   border-radius: 5em;
   color: #fff;
-  background: linear-gradient(to right, blue, grey);
   border: 0;
   padding-left: 40px;
   padding-right: 40px;

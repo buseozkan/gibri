@@ -8,7 +8,7 @@ import "./homepage.css";
 import Reservation from "../reservation/reservation";
 import { NavLink } from "react-router-dom";
 
-const Programs = () => {
+const Home = () => {
   const [events, setEvents] = useState([]);
   const [city, setCity] = useState(null);
 
@@ -43,8 +43,6 @@ const Programs = () => {
 
   return (
     <>
-      <h1>Events</h1>
-
       <div>
         <div>
           <Row className="ml-4 mt-4">
@@ -93,4 +91,4 @@ const Programs = () => {
     </>
   );
 };
-export default Programs;
+export default Home;
