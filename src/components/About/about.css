@@ -18,14 +18,13 @@
   }
   
   .kart {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0);
     margin: 8px;
   }
   
   .about-section {
     padding: 50px;
     text-align: center;
-    background-color: #474e5d;
   }
   
   
@@ -44,7 +43,6 @@
     color: #2c67ba 51%;
   }
   .aciklama1{
-    color: gold;
     text-align: center;
     padding-top: 1cm;
   }
@@ -111,7 +109,7 @@
 padding: 10px;
 break-after: always;
 break-before: always;
-background-color: #FFFFFF;
+background-color: #ffffff00;
 margin-top: 7cm;
 
 }
