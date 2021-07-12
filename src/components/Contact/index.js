@@ -32,13 +32,16 @@ const Contact = () => {
         Let us know what you think! In order to provide better service, please
         do not hesitate to give us your feedback. Thank you.
       </p>
-      <Form onSubmit={(submitName, submitEmail, submitMessage)} method="POST">
+      <Form
+        id="form"
+        onSubmit={(submitName, submitEmail, submitMessage)}
+        method="POST"
+      >
         <div className="page-content">
-          <div>
+          <div className="page-inputs">
             <input
               className="input"
               placeholder="Name"
-              id="name"
               type="name"
               required
               value={name}
@@ -58,17 +61,15 @@ const Contact = () => {
           </div>
           <div>
             <textarea
-              className="input"
+              id="message-textarea"
               placeholder="Message"
-              id="message"
               required
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
         </div>
-
-        <button type="submit" className="submit">
+        <button type="submit" className="submit-button">
           Submit
         </button>
       </Form>
