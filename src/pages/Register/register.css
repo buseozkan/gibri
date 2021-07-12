@@ -22,16 +22,15 @@
   }
 }
 
-img {
+.img {
   border: 1px;
   border-radius: 4px;
   padding: 5px;
   width: 100px;
 }
-body {
-  background-color: #ebecf6;
-  font-family: "Ubuntu", sans-serif;
-}
+
+
+
 
 .Registration-Button {
   display: flex;

@@ -1,5 +1,5 @@
 import React from "react";
-//import "./App.css";
+import "./App.css";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -10,7 +10,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 //import Header from "components/Header";
 //import Explore from "./components/Explore";
 import Contact from "./components/Contact";
-import Reservation from "./pages/reservation/reservation";
 
 function App() {
   return (
@@ -34,9 +33,7 @@ function App() {
             <Route path="/">
               <Home />
             </Route>
-            <Route path="/reservation">
-              <Reservation />
-            </Route>
+            
           </Switch>
         </div>
       </div>

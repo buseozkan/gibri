@@ -5,8 +5,6 @@ import { Row } from "react-bootstrap";
 import Dropdown from "react-dropdown";
 import "react-dropdown/style.css";
 import "./homepage.css";
-import Reservation from "../reservation/reservation";
-import { NavLink } from "react-router-dom";
 
 const Home = () => {
   const [events, setEvents] = useState([]);
@@ -61,26 +59,23 @@ const Home = () => {
             value={cities}
           />
         </div>
-        <div className="background">
-          <img src="/home/ahmetakinsel/Desktop/Projects-2/gibri/gibri-fe/public/images/gibri.png" />
+        <div>
         </div>
         <div class="boxes">
           {eventsToShow.map((event) => {
             return (
               <>
                 <div class="box">
-                  <img src={event.image}></img>
-                  <h3>{event.eventName}</h3>
-                  <h2>{event.eventCity}</h2>
-                  <h2>{event.eventArtist}</h2>
-                  <h2>{event.eventImage}</h2>
-                  <p className="eventaciklama">{event.eventDescription}</p>
-                  <p className="eventaciklama">
-                    {" "}
-                    <form action="./Reservation">
-                      <a href="./Reservation">Click for reservation</a>
-                    </form>
-                  </p>
+                    <img src={event.image}></img>
+                    <h3>{event.eventName}</h3>
+                    <h2>{event.eventCity}</h2>
+                    <h2>{event.eventArtist}</h2>
+                    <h2>{event.eventImage}</h2>
+                    <p className="eventaciklama">{event.eventDescription}</p>
+                    <p className="eventaciklama">
+                      {" "}
+                      
+                    </p>
                 </div>
                 <div></div>
               </>

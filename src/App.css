@@ -1,3 +1,7 @@
+body {
+  background-image: url("./images/gibri.png");
+}
+
 .text {
   position: absolute;
   top: 50%;
@@ -15,8 +19,8 @@ top: 20px;
 left: 16px;
 color: yellowgreen;
 background-color: black;
-
 }
+
 
 @media (max-width: 480px) {
 .video-item {
@@ -55,10 +59,8 @@ flex: 0 0 250px;
 * {
 box-sizing: border-box;
 }
-body {
-  margin: 0
-  
-}
+
+
 .cards {
 min-height: 100vh;
 }
@@ -150,10 +152,8 @@ color:  #3a7bd5 51%;
 .aciklama2 {
   color: #3a7bd5 51%;
 }
-body {
-font-family: "Ubuntu", sans-serif;
-background-image: url("./components/About/gibri.png");
-}
+
+
 
 .Login-Button {
 display: flex;
@@ -284,10 +284,7 @@ padding-left: 1cm;
   }
 }
 
-body {
-  background-color: #ebecf6;
-  font-family: "Ubuntu", sans-serif;
-}
+
 
 .Login-Button {
   display: flex;
@@ -426,10 +423,7 @@ img {
   padding: 5px;
   width: 150px;
 }
-body {
-  background-color: #ebecf6;
-  font-family: "Ubuntu", sans-serif;
-}
+
 
 .Registration-Button {
   display: flex;
