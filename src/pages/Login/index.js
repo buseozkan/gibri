@@ -57,100 +57,81 @@ const Login = ({ forceUpdate }) => {
         <img className="login-img" src={loginImg} alt="img" />
       </div>
       <text id="welcomeText">Welcome To Gibri-Events</text>
-      {/*<div onSubmit={handleSubmit}>*/}
-      <div size="lg" controlId="email">
-        <div className="inputs">
-          <input
-            className="form-control"
-            type="email"
-            placeholder="Email"
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-            value={email}
-          />
-        </div>
-        <div>
-          <Form.Group size="lg" controlId="password">
-            <Form.Label className="label">Email </Form.Label>
-            <input
-              type="email"
-              className="form-control"
-              placeholder="Enter your email here"
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-              value={email}
-            />
-            {emailErrorMessage && (
-              <p
-                style={{
-                  color: "red",
-                  fontSize: "12px",
-                  "margin-top": "-7px",
-                }}
-              >
-                {emailErrorMessage}
-              </p>
-            )}
-          </Form.Group>
-        </div>
-        <div>
-          <div className="inputs">
-            <Form.Group size="lg" controlId="password">
-              <input
-                className="form-control-2"
-                type="password"
-                className="form-control"
-                placeholder="Enter your password here"
-                onChange={(e) => {
-                  setPassword(e.target.value);
-                }}
-                value={password}
-              />
-            </Form.Group>
-          </div>
-          {passwordErrorMessage && (
-            <p
-              style={{
-                color: "red",
-                fontSize: "12px",
-                "margin-top": "-7px",
-              }}
-            >
-              {passwordErrorMessage}
-            </p>
-          )}
-          {invalidCredentialsError && (
-            <p
-              style={{
-                color: "red",
-                fontSize: "12px",
-                "margin-top": "-7px",
-              }}
-            >
-              {invalidCredentialsError}
-            </p>
-          )}
-          <button
-            className="loginbutton"
-            type="submit"
-            disabled={!isValid}
-            value="Register"
-            onClick={(event) => {
-              event.preventDefault(event);
-              handleLogin(event);
+
+      <div className="inputs">
+        <input
+          type="email"
+          className="form-control"
+          placeholder="Email"
+          onChange={(e) => {
+            setEmail(e.target.value);
+          }}
+          value={email}
+        />
+        {emailErrorMessage && (
+          <p
+            style={{
+              color: "red",
+              fontSize: "12px",
+              "margin-top": "-7px",
             }}
           >
-            Log In
-          </button>
+            {emailErrorMessage}
+          </p>
+        )}
+      </div>
+      <div>
+        <div className="inputs">
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Password"
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
+            value={password}
+          />
         </div>
-        <div className="Links">
-          <div>
-            <a className="helpMe" href="./contact">
-              Help Me
-            </a>
-          </div>
+        {passwordErrorMessage && (
+          <p
+            style={{
+              color: "red",
+              fontSize: "12px",
+              "margin-top": "-7px",
+            }}
+          >
+            {passwordErrorMessage}
+          </p>
+        )}
+        {invalidCredentialsError && (
+          <p
+            style={{
+              color: "red",
+              fontSize: "12px",
+              "margin-top": "-7px",
+            }}
+          >
+            {invalidCredentialsError}
+          </p>
+        )}
+        <button
+          className="loginbutton"
+          type="submit"
+          disabled={!isValid}
+          value="Register"
+          onClick={(event) => {
+            event.preventDefault(event);
+            handleLogin(event);
+          }}
+        >
+          Log In
+        </button>
+      </div>
+      <div className="Links">
+        <div>
+          <a className="helpMe" href="./contact">
+            Help Me
+          </a>
         </div>
       </div>
     </div>

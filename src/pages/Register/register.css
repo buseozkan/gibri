@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
 
 @media all and (min-width: 480px) {
   .register {
     background-color: #ffffff;
     width: 400px;
-    height: 800px;
+    height: 700px;
     margin: 7em auto;
     border-radius: 1.5em;
     box-shadow: 0px 11px 35px 2px rgb(0 0 0 / 14%);
@@ -15,10 +14,9 @@
   }
 
   .form-group {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Montserrat", sans-serif;
+    margin: 0 auto;
+    max-width: 320px;
+    margin: 15px;
   }
 }
 
@@ -26,11 +24,11 @@ img {
   border: 1px;
   border-radius: 4px;
   padding: 5px;
-  width: 100px;
+  width: 150px;
 }
 body {
   background-color: #ebecf6;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .Registration-Button {
@@ -52,23 +50,6 @@ body {
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
 }
 
-/*.Login-Button2 {
-    text-align: center;
-    cursor: pointer;
-    border-radius: 5em;
-    color: #fff;
-    background: linear-gradient(to right, blue, grey);
-    border: 0;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-family: 'Ubuntu', sans-serif;
-    margin-left: 35%;
-    font-size: 13px;
-    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
-  }
-  */
 .Links {
   text-shadow: 0px 0px 3px rgb(117 117 117 / 12%);
   color: #e1bee7;
@@ -120,4 +101,14 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 23px;
+}
+
+.input {
+  text-align: left !important;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  padding-left: 1cm;
 }

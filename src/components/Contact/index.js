@@ -4,9 +4,7 @@ import Form from "react-bootstrap/Form";
 
 import "./contactUs.css";
 
-
 const Contact = () => {
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -27,22 +25,18 @@ const Contact = () => {
     });
   };
 
-
   return (
-
     <div className="container">
       <h1 className="title">Contact Us</h1>
       <p classname="aciklama2">
-        Let us know what you think! In order to provide better service,
-        please do not hesitate to give us your feedback. Thank you.
-              </p>
-      <Form
-        onSubmit={submitName, submitEmail, submitMessage}
-        method="POST"
-      >
-        <div className="container">
+        Let us know what you think! In order to provide better service, please
+        do not hesitate to give us your feedback. Thank you.
+      </p>
+      <Form onSubmit={(submitName, submitEmail, submitMessage)} method="POST">
+        <div className="page-content">
           <div>
-            <input className="input"
+            <input
+              className="input"
               placeholder="Name"
               id="name"
               type="name"
@@ -52,16 +46,19 @@ const Contact = () => {
             />
           </div>
           <div>
-            <input className="input"
+            <input
+              className="input"
               placeholder="Email"
               type="email"
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-            /><br></br>
+            />
+            <br></br>
           </div>
           <div>
-            <textarea className="input"
+            <textarea
+              className="input"
               placeholder="Message"
               id="message"
               required
@@ -73,11 +70,10 @@ const Contact = () => {
 
         <button type="submit" className="submit">
           Submit
-       </button>
+        </button>
       </Form>
     </div>
-
   );
 };
 
-export default Contact; 
+export default Contact;
