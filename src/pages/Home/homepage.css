@@ -6,6 +6,8 @@
   padding: 5px;
   width: 150px;
   border-color: black;
+  object-fit: cover;
+
 }
 
 .dropdown1 {
