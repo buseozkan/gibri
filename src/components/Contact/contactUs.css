@@ -11,11 +11,10 @@
   margin-right: 2cm;
 }
 .container {
-  position: relative;
   display: flex;
   align-items: center;
   width: 1000px;
-  height: 550px;
+  height: 600px;
   margin: 7em auto;
   border-radius: 1.5em;
   box-shadow: 0px 11px 35px 2px rgb(0 0 0 / 14%);
@@ -25,16 +24,19 @@
   letter-spacing: 1px;
   font-family: "Montserrat", sans-serif !important;
   background-color: #ffffffaa;
-  margin-top: -30cm;
+  margin-top: -4cm;
 }
 
 
-p {
+.altbaslik {
   margin-top: 1cm !important;
-  margin-left: 2cm;
+  margin-left: 1cm;
   font-size: 24px;
   text-align: center !important;
   color: #4b4453;
+  font-weight: bold;
+  z-index: 100;
+
 }
 
 
@@ -53,17 +55,22 @@ p {
   outline: none;
   box-sizing: border-box;
   border: 2px solid rgba(0, 0, 0, 0.139);
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   margin-left: 46px;
   font-family: "Montserrat", sans-serif;
   width: 200px;
 }
 .baslik {
   text-align: center !important;
-  margin-top: 30cm;
+  margin-top: 5cm;
   font-size: 40px;
   margin-left: -1cm;
- flex-wrap: wrap;
+  overflow: hidden;
+  text-align: center;
+  font-weight: bold;
+  z-index: 1;
+  position: relative;
+  
 }
 
 #message-textarea {
@@ -83,7 +90,7 @@ p {
   padding-bottom: 10px;
   padding-top: 10px;
   font-family: "Montserrat", sans-serif;
-  margin-left: 35%;
+  margin-left: 30%;
   font-size: 15px;
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
 }

@@ -68,7 +68,7 @@ const Home = () => {
   }
 
   const defaultOption = "Cities";
-  const defaultOption2 = "Artists";
+  const defaultOption2 = "Musicians";
 
   return (
     <>
