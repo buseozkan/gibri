@@ -1,7 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+.contact-img {
+  width: 500px;
+  height: auto;
+  float: left;
+  text-align: center;
+}
+.formcuk {
+  align-self: auto;
+  margin-right: 2cm;
+}
 .container {
-  padding: 10px 20px;
-  width: 30%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 1000px;
   height: 550px;
   margin: 7em auto;
   border-radius: 1.5em;
@@ -12,57 +25,45 @@
   letter-spacing: 1px;
   font-family: "Montserrat", sans-serif !important;
   background-color: #ffffffaa;
-}
-.title {
-  font-family: "Montserrat", sans-serif !important;
-  font-size: 36px;
-  text-align: center;
-  background-color: linear-gradient(to right, #9c27b0, #e040fb);
-  color: linear-gradient(to right, #9c27b0, #e040fb);
+  margin-top: -30cm;
 }
 
+
 p {
+  margin-top: 1cm !important;
+  margin-left: 2cm;
   font-size: 24px;
-  text-align: center;
+  text-align: center !important;
   color: #4b4453;
 }
 
-.page-inputs {
+
+.input {
   display: flex;
   justify-content: center;
-  text-align: center !important;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-top: 10px;
-  width: 10cm;
-  margin: 0 auto;
-  max-width: 320px;
-  margin: 15px;
-}
-.input {
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding-left: 1cm;
   text-align: center !important;
-  width: 90%;
-  color: rgb(38, 50, 56);
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 1px;
   background: rgba(136, 126, 126, 0.04);
   padding: 10px 20px;
-  border: none;
   border-radius: 20px;
   outline: none;
   box-sizing: border-box;
-  border: 2px solid rgba(0, 0, 0, 0.02);
+  border: 2px solid rgba(0, 0, 0, 0.139);
   margin-bottom: 50px;
   margin-left: 46px;
-  text-align: center;
-  margin-bottom: 27px;
   font-family: "Montserrat", sans-serif;
+  width: 200px;
+}
+.baslik {
+  text-align: center !important;
+  margin-top: 30cm;
+  font-size: 40px;
+  margin-left: -1cm;
+ flex-wrap: wrap;
 }
 
 #message-textarea {

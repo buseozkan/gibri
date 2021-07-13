@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Form from "react-bootstrap/Form";
+import contactImg from "./contact.svg";
 
 import "./contactUs.css";
 
@@ -26,54 +27,65 @@ const Contact = () => {
   };
 
   return (
-    <div className="container">
-      <h1 className="title">Contact Us</h1>
-      <p classname="aciklama2">
-        Let us know what you think! In order to provide better service, please
-        do not hesitate to give us your feedback. Thank you.
-      </p>
-      <Form
-        id="form"
-        onSubmit={(submitName, submitEmail, submitMessage)}
-        method="POST"
-      >
-        <div className="page-content">
-          <div className="page-inputs">
-            <input
-              className="input"
-              placeholder="Name"
-              type="name"
-              required
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-          </div>
-          <div>
-            <input
-              className="input"
-              placeholder="Email"
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <br></br>
-          </div>
-          <div>
-            <textarea
-              id="message-textarea"
-              placeholder="Message"
-              required
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-            />
-          </div>
+    <>
+      <div className="baslik">
+        <text className="baslik">Contact Us</text>
+        <p>
+          Let us know what you think! In order to provide better service, please
+          do not hesitate to give us your feedback. Thank you.
+       </p>
+      </div>
+
+      <div className="container">
+        <div className="contact-img">
+          <img className="contact-img" src={contactImg} alt="img" />
         </div>
-        <button type="submit" className="submit-button">
-          Submit
+        <div className="formcuk">
+          <Form
+            id="form"
+            onSubmit={(submitName, submitEmail, submitMessage)}
+            method="POST"
+          >
+            <div className="page-content">
+              <div>
+                <input
+                  className="input"
+                  placeholder="Name"
+                  type="name"
+                  required
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
+              </div>
+              <div>
+                <input
+                  className="input"
+                  placeholder="Email"
+                  type="email"
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <br></br>
+              </div>
+              <div>
+                <input
+                  className="input"
+                  placeholder="Message"
+                  type="message"
+                  required
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                />
+              </div>
+            </div>
+            <button type="submit" className="submit-button">
+              Submit
         </button>
-      </Form>
-    </div>
+          </Form>
+        </div>
+      </div>
+    </>
   );
 };
 
