@@ -10,10 +10,7 @@ const About = () => {
           We have created an events page as beginner junior developers. This
           webpage is for Cyprus events only. Hope you will like it.
         </p>
-
-        {/* <a href="/home" class="btn btn-primary">
-          View Date & Place <i class="fa fa-angle-right"></i>
-  </a> */}
+        
         <h2 class="Team">Our Team</h2>
         <div className="row">
           <div class="column">
@@ -27,7 +24,7 @@ const About = () => {
                 <p class="aciklama">Junior Developer</p>
                 <p>
                   <form action="https://github.com/ahmetakinsel">
-                    <button type="link" class="btn">
+                    <button type="link" class="github">
                       Github Page
                     </button>
                   </form>
@@ -47,7 +44,7 @@ const About = () => {
                 <p class="aciklama">Junior Developer</p>
                 <p>
                   <form action="https://github.com/buseozkan">
-                    <button type="link" class="btn">
+                    <button type="link" class="github">
                       Github Page
                     </button>
                   </form>
@@ -67,7 +64,7 @@ const About = () => {
                 <p class="aciklama">Junior Developer</p>
                 <p>
                   <form action="https://github.com/AhmetMustafa">
-                    <button type="link" class="btn">
+                    <button type="link" class="github">
                       Github Page
                     </button>
                   </form>
