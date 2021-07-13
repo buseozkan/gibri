@@ -40,7 +40,8 @@
   }
   
   .aciklama {
-    color: #2c67ba 51%;
+    align-items: center !important;
+    margin-left: 0cm;
   }
   .aciklama1{
     text-align: center;
@@ -79,6 +80,8 @@
   text-align: center;
   cursor: pointer;
   width: 100%;
+  align-items: center !important;
+  margin-left: -2cm;
   }
 
   .github:hover {
@@ -110,6 +113,6 @@ padding: 10px;
 break-after: always;
 break-before: always;
 background-color: #ffffff00;
-margin-top: 7cm;
+margin-top: 2cm;
 
 }

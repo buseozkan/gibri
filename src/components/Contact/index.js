@@ -30,9 +30,8 @@ const Contact = () => {
     <>
       <div className="baslik">
         <text className="baslik">Contact Us</text>
-        <p>
-          Let us know what you think! In order to provide better service, please
-          do not hesitate to give us your feedback. Thank you.
+        <p className="altbaslik">
+        Questions? Comments? Say hi here!
        </p>
       </div>
 
