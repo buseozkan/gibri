@@ -19,7 +19,7 @@ const About = () => {
           <h2 className="member-header-1">Ahmet Misirli</h2>
           <p className="member-text">Junior Developer</p>
           <form action="https://github.com/AhmetMustafa">
-            <button type="link" className="github-btn">
+            <button type="link" className="github-btn-1">
               Github Page
             </button>
           </form>
@@ -32,7 +32,7 @@ const About = () => {
           <h2 className="member-header-2">Buse Ozkan</h2>
           <p className="member-text">Junior Developer</p>
           <form action="https://github.com/buseozkan">
-            <button type="link" className="github-btn">
+            <button type="link" className="github-btn-2">
               Github Page
             </button>
           </form>
@@ -46,7 +46,7 @@ const About = () => {
           <p className="member-text">Junior Developer</p>
 
           <form action="https://github.com/ahmetakinsel">
-            <button type="link" className="github-btn">
+            <button type="link" className="github-btn-3">
               Github Page
             </button>
           </form>
