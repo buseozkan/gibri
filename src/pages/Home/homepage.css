@@ -6,7 +6,6 @@ img {
   padding: 5px;
   width: 150px;
   border-color: black;
-
 }
 
 .dropdown1 {
@@ -19,8 +18,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-
-
 /*
   = ====== visuals =========
  */
@@ -28,12 +25,10 @@ body {
   box-sizing: border-box;
 }
 
-
 .boxes {
   padding: 0.5vw;
   flex-flow: row wrap;
   display: flex;
-  
 }
 
 .box {
@@ -44,10 +39,8 @@ body {
   width: 320px;
   max-width: 320px;
   max-height: 400px;
-  background-color:whitesmoke;
-
+  background-color: whitesmoke;
 }
-
 
 .unlu {
   color: rgb(59, 59, 143);
@@ -57,7 +50,6 @@ body {
   width: 100%;
   height: 50%;
   border-color: black;
-
 }
 
 select {
@@ -72,13 +64,10 @@ select {
   size: 40px;
 }
 
-
-
 .eventaciklama {
   font-size: 20px;
   text-align: left;
 }
-
 
 .dropdown-menu {
   position: relative;

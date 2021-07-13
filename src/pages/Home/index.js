@@ -11,29 +11,29 @@ const Home = () => {
 
   const cities = ["Lefkosa", "Girne", "Magusa", "Guzelyurt", "Iskele"];
   const artists = [
-  'Ahmet Evan',
-  'Rast',
-  'Dj Privillige',
-  'Eril Cambaz',
-  'Reva',
-  'SensiJam',
-  'Bunfyah',
-  'Fikri Karayel',
-  'Ezgi Akgurgen',
-  'Atesh',
-  'MishaRoots',
-  'Todds and Friends',
-  'Nafiz Dolek',
-  'Organic Pixel',
-  'Cahit Kutrafali Trio',
-  'Dj Coskuner',
-  'Ogulcan Basari',
-  'Dilara Ferit',
-  'Osman Tugsal',
-  'The Healers',
-  'Zildji',
-  'OneBlood',
-  'Osman Tugsal'
+    "Ahmet Evan",
+    "Rast",
+    "Dj Privillige",
+    "Eril Cambaz",
+    "Reva",
+    "SensiJam",
+    "Bunfyah",
+    "Fikri Karayel",
+    "Ezgi Akgurgen",
+    "Atesh",
+    "MishaRoots",
+    "Todds and Friends",
+    "Nafiz Dolek",
+    "Organic Pixel",
+    "Cahit Kutrafali Trio",
+    "Dj Coskuner",
+    "Ogulcan Basari",
+    "Dilara Ferit",
+    "Osman Tugsal",
+    "The Healers",
+    "Zildji",
+    "OneBlood",
+    "Osman Tugsal",
   ];
 
   const getEvent = async () => {
@@ -67,6 +67,8 @@ const Home = () => {
     });
   }
 
+  const defaultOption = "Cities";
+  const defaultOption2 = "Artists";
 
   return (
     <>
@@ -81,7 +83,7 @@ const Home = () => {
               console.log(citySelected.value, "target");
             }}
             placeholder="Sehrinizi Secin"
-            value={cities}
+            value={defaultOption}
           />
           <Dropdown
             className="dropdown1"
@@ -91,26 +93,22 @@ const Home = () => {
               console.log(artistSelected.value, "target");
             }}
             placeholder="Artist Secin"
-            value={cities}
+            value={defaultOption2}
           />
         </div>
-        <div>
-        </div>
+        <div></div>
         <div class="boxes">
           {eventsToShow.map((event) => {
             return (
               <>
                 <div class="box">
-                    <img src={event.image}></img>
-                    <h3>{event.eventName}</h3>
-                    <h2>{event.eventCity}</h2>
-                    <h2 className="unlu">{event.eventArtist}</h2>
-                    <h2>{event.eventImage}</h2>
-                    <p className="eventaciklama">{event.eventDescription}</p>
-                    <p className="eventaciklama">
-                      {" "}
-                      
-                    </p>
+                  <img src={event.image}></img>
+                  <h3>{event.eventName}</h3>
+                  <h2>{event.eventCity}</h2>
+                  <h2 className="unlu">{event.eventArtist}</h2>
+                  <h2>{event.eventImage}</h2>
+                  <p className="eventaciklama">{event.eventDescription}</p>
+                  <p className="eventaciklama"> </p>
                 </div>
                 <div></div>
               </>
