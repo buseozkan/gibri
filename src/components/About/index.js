@@ -7,8 +7,7 @@ const About = () => {
     <div className="container2">
       <h2 className="team-header">Our Team</h2>
       <p className="page-text">
-        We have created an events page as beginner junior developers. This
-        webpage is for Cyprus events only. Hope you will like it.
+        We have created an events page as beginner junior developers. This webpage is for Cyprus events only. Making reservations and buying tickets options will be available soon. Please bear with us!
       </p>
       <div className="team-members">
         <div className="team-member-1">
