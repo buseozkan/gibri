@@ -67,14 +67,14 @@ const Home = () => {
     });
   }
 
-  const defaultOption = "Cities";
-  const defaultOption2 = "Musicians";
+  const defaultOption = "City";
+  const defaultOption2 = "Artist";
 
   return (
     <>
       <div>
         <div class="citiesMenu">
-          <h1 className="dropdown1">Filter by either City or Artist Name</h1>
+          <h1 className="dropdown1">Filter by City or Artist</h1>
           <Dropdown
             className="dropdown1"
             options={cities}
@@ -101,8 +101,8 @@ const Home = () => {
           {eventsToShow.map((event) => {
             return (
               <>
-                <div class="box">
-                  <img src={event.image}></img>
+                <div className="box">
+                  <img className="homeimg" src={event.image}></img>
                   <h3>{event.eventName}</h3>
                   <h2>{event.eventCity}</h2>
                   <h2 className="unlu">{event.eventArtist}</h2>

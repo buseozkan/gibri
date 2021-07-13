@@ -1,5 +1,5 @@
 body {
-  background-image: url("./images/gibri.png");
+  background-image: url("./images/gibri2.png");
 }
 
 .text {
@@ -415,13 +415,6 @@ padding-left: 1cm;
     max-width: 320px;
     margin: 15px;
   }
-}
-
-img {
-  border: 1px;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
 }
 
 

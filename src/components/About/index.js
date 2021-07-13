@@ -11,7 +11,7 @@ const About = () => {
       </p>
       <div className="team-members">
         <div className="team-member-1">
-          <img
+          <img classname="foto"
             src="https://scontent.fada2-2.fna.fbcdn.net/v/t1.18169-9/29790177_10156371848822188_2342701848240893447_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_eui2=AeFwBrOeKQVn5Hlp3VywbnCBiSRkvATriHOJJGS8BOuIcxyG0W9LbzUXi_RvqBU2QK8&_nc_ohc=5nZtOa7Cw0wAX99A_L-&_nc_ht=scontent.fada2-2.fna&oh=b251868a74a89034243577dd646508e8&oe=60EE473C"
             alt="Akinsel"
           />
@@ -24,7 +24,7 @@ const About = () => {
           </form>
         </div>
         <div className="team-member-2">
-          <img
+          <img classname="foto"
             src="https://avatars.githubusercontent.com/u/73131048?v=4"
             alt="Akinsel"
           />
@@ -37,7 +37,7 @@ const About = () => {
           </form>
         </div>
         <div className="team-member-3">
-          <img
+          <img classname="foto"
             src="https://avatars.githubusercontent.com/u/74990420?v=4"
             alt="Akinsel"
           />

@@ -4,7 +4,7 @@
   .register {
     background-color: #ffffffaa;
     width: 400px;
-    height: 750px;
+    height: 550px;
     margin: 7em auto;
     border-radius: 1.5em;
     box-shadow: 0px 11px 35px 2px rgb(0 0 0 / 14%);
@@ -20,7 +20,7 @@
   }
 }
 
-img {
+.register-img {
   border: 1px;
   border-radius: 4px;
   padding: 5px;
