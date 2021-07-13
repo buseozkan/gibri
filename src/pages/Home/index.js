@@ -67,6 +67,8 @@ const Home = () => {
     });
   }
 
+  const defaultOption = "Cities";
+  const defaultOption2 = "Musicians";
 
   return (
     <>
@@ -81,7 +83,7 @@ const Home = () => {
               console.log(citySelected.value, "target");
             }}
             placeholder="Sehrinizi Secin"
-            value={cities}
+            value={defaultOption}
           />
           <Dropdown
             className="dropdown1"
@@ -91,7 +93,7 @@ const Home = () => {
               console.log(artistSelected.value, "target");
             }}
             placeholder="Artist Secin"
-            value={cities}
+            value={defaultOption2}
           />
         </div>
         <div>

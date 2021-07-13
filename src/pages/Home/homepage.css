@@ -12,8 +12,12 @@ img {
 .dropdown1 {
   display: inline-block;
   padding-left: 10%;
+  
 }
 
+.Dropdown {
+  height: 1cm;
+}
 body {
   background-color: #ebecf6;
   font-family: "Montserrat", sans-serif;
