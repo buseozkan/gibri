@@ -43,7 +43,7 @@ const Contact = () => {
           <Form
             id="form"
             onSubmit={(submitName, submitEmail, submitMessage)}
-            method="POST"
+            action="./home"
           >
             <div className="page-content">
               <div>
@@ -78,7 +78,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <button type="submit" className="submit-button">
+            <button link="./home" type="submit" className="submit-button">
               Submit
         </button>
           </Form>
