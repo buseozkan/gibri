@@ -103,10 +103,12 @@ const Home = () => {
               <>
                 <div className="box">
                   <img className="homeimg" src={event.image}></img>
-                  <h3>{event.eventName}</h3>
-                  <h2>{event.eventCity}</h2>
+
                   <h2 className="unlu">{event.eventArtist}</h2>
                   <h2>{event.eventImage}</h2>
+                  <h3>{event.eventName}</h3>
+                  <h2>{event.eventCity}</h2>
+                  <h3>{event.eventDate}</h3>
                   <p className="eventaciklama">{event.eventDescription}</p>
                   <p className="eventaciklama"> </p>
                 </div>
