@@ -109,8 +109,7 @@ const Home = () => {
                   <h3>{event.eventName}</h3>
                   <h2>{event.eventCity}</h2>
                   <h3>{event.eventDate}</h3>
-                  <p className="eventaciklama">{event.eventDescription}</p>
-                  <p className="eventaciklama"> </p>
+                  
                 </div>
                 <div></div>
               </>
